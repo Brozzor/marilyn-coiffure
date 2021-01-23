@@ -1139,16 +1139,5 @@
 
 <script>
 export default {
-head: {
-    script: [
-      {
-        src: '@/assets/js/jquery1.12.4.min.js',
-        src: '@/assets/js/jquery.fancybox.js',
-        src: '@/assets/js/smoothslides-2.2.1.min.js',
-        src: '@/assets/js/slick.min.js',
-        src: '@/assets/js/custom.js',
-      }
-    ]
-  }
 }
 </script>
