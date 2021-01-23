@@ -63,7 +63,7 @@
           </div>
           <div class="logo">
             <a href="index.html" title="Barber Shop"
-              ><img src="images/logo.png" alt="logo"
+              ><img src="img/logo.png" alt="logo"
             /></a>
           </div>
           <div class="table-cell">
