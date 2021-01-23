@@ -1119,7 +1119,7 @@ our-team
 }
 
 .our-team-box {
-	float: left;
+	margin:auto;
 	width: 33.33%;
 	padding-left: 28px;
 	padding-right: 28px;
