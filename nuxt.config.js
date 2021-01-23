@@ -19,33 +19,12 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700'
       }
-    ],
-    script: [
-      {
-        src: "/js/jquery1.12.4.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/jquery.fancybox.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/smoothslides-2.2.1.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/slick.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/custom.js",
-        type: "text/javascript"
-      },
     ]
+
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [    
+  css: [
     '@/assets/css/smoothslides.theme.css',
     '@/assets/css/slick.css',
     '@/assets/css/jquery.fancybox.css',
