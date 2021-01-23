@@ -7,19 +7,50 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'coiffure',
+    title: 'Coiffeuse à domicile Marilyn',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Coiffeuse à domicile Poitiers (86) et ces alentours. Votre coiffeuse professionnelle et expérimentée se déplace à domicile pour réaliser votre coiffure idéale.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700'
+      }
+    ],
+    script: [
+      {
+        src: "/js/jquery1.12.4.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "/js/jquery.fancybox.js",
+        type: "text/javascript"
+      },
+      {
+        src: "/js/smoothslides-2.2.1.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "/js/slick.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "/js/custom.js",
+        type: "text/javascript"
+      },
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
+  css: [    
+    '@/assets/css/smoothslides.theme.css',
+    '@/assets/css/slick.css',
+    '@/assets/css/jquery.fancybox.css',
+    '@/assets/css/styles.css',
+    '@/assets/css/icofont.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
