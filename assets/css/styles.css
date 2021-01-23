@@ -959,6 +959,9 @@ Testimonial
     max-width: 730px;
     width: 100%;
     margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .testimonial-box {
@@ -983,17 +986,17 @@ Testimonial
 	margin: 0 auto;
 }
 
-.testimonial-wrapper .slick-arrow {
+.testimonial-wrapper .arrow-arrow {
   border-radius: 4px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   margin-top: -49px;
 }
 
-.testimonial-wrapper .slick-prev {
+.testimonial-wrapper .arrow-prev {
 	left: -23px;
 }
 
-.testimonial-wrapper .slick-next {
+.testimonial-wrapper .arrow-next {
 	right: -23px;
 }
 
@@ -1037,17 +1040,17 @@ Testimonial
 	margin: 144px auto 0;
 }
 
-.testimonial-logo .slick-prev {
+.testimonial-logo .arrow-prev {
   background: #F5EEE6 url("../images/logo-angle-left.png") no-repeat scroll center center;
   left: 0;
 }
 
-.testimonial-logo .slick-next {
+.testimonial-logo .arrow-next {
   background: #F5EEE6 url("../images/logo-angle-right.png") no-repeat scroll center center;
   right: 0;
 }
 
-.testimonial-logo .slick-arrow {
+.testimonial-logo .arrow-arrow {
 	width: 17px;
 	height: 9px;
 }
