@@ -427,99 +427,11 @@
           <div class="our-team-box">
             <div class="our-team-inner">
               <div class="our-team-img">
-                <img src="images/team-img1.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Laura Griffinia March</h5>
-                <span>Barber</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
                 <img src="images/team-img2.jpg" alt="" />
               </div>
               <div class="our-team-text">
                 <h5>Stevn Josephin</h5>
                 <span>Hair Cuter</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img3.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Dr. Alexnder David</h5>
-                <span>Shaver</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img1.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Laura Griffinia March</h5>
-                <span>Barber</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img2.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Stevn Josephin</h5>
-                <span>Hair Cuter</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img3.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Dr. Alexnder David</h5>
-                <span>Shaver</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img1.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Laura Griffinia March</h5>
-                <span>Barber</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img2.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Stevn Josephin</h5>
-                <span>Hair Cuter</span>
-              </div>
-            </div>
-          </div>
-          <div class="our-team-box">
-            <div class="our-team-inner">
-              <div class="our-team-img">
-                <img src="images/team-img3.jpg" alt="" />
-              </div>
-              <div class="our-team-text">
-                <h5>Dr. Alexnder David</h5>
-                <span>Shaver</span>
               </div>
             </div>
           </div>
