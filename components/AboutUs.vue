@@ -11,53 +11,47 @@
             <div class="brush-over-text">
               <div class="timing-text">
                 <img src="images/cutter-ic.png" alt="" />
-                <h5>timing</h5>
+                <h5>Horaires</h5>
               </div>
               <div class="days-text">
-                <span class="day">Monday - Friday</span>
-                <span class="time">09.00 AM - 17.00 PM</span>
+                <span class="day">Lundi - Vendredi</span>
+                <span class="time">08.00 H - 17.00 H</span>
               </div>
               <div class="days-text saturday-text">
-                <span class="day">Saturday</span>
-                <span class="time">09.00 AM - 17.00 PM</span>
+                <span class="day">Samedi</span>
+                <span class="time">09.00 H - 16.00 H</span>
               </div>
               <div class="days-text sunday-text">
-                <span class="day">Sunday</span>
-                <span class="time">Closed</span>
+                <span class="day">Dimanche</span>
+                <span class="time">Fermer</span>
               </div>
               <div class="location-text">
                 <img src="images/loc-ic.png" alt="" />
-                <span>26 Avenue, Broklin, NJ-56870</span>
+                <span>Poitiers et ces alentours</span>
               </div>
               <div class="phone-text">
                 <img src="images/phone-ic.png" alt="" />
-                <span>+1 987-654-3210</span>
+                <span>07 60 78 94 85</span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="experience-right">
-        <h6>The Unique Story</h6>
-        <h2>52 Years Of Experience</h2>
+        <h6>Une histoire unique</h6>
+        <h2>37 ans d'expériences</h2>
         <span class="line"></span>
         <div class="story-text">
           <div class="story-text-left">
             <p class="big-text">
-              Lorem Ipsum is simply dummy text of the<br />
-              printorem Ipsum is simply mmy text of the<br />
-              printing and.
+              Marilyn Buisson vous accompagne dans<br />
+              chacune de vos demandes capillaire<br />
+              depuis maintenant 37 ans
             </p>
             <p>
-              Lorem Ipsum is simply dummy text of the printorem Ipsum is simply
-              mmy text of the printing and typing industry Lorem Ipsum has been
-              the industrys stanard dummy text ever since the when an g and ing
-              indrem Ipsumf. the printing and ypese ing ndustry Lorem sum has
-              been the industrysLorem Ipsum is simply dummy text of the
-              printorem Ipsum is simply mmy text of the printin gbeen the
-              industrys.
+              Marilyn Buisson à passer une grande partie de sa vie à couper des cheveux, pour elle ce n'est pas un métier c'est sa passion.<br>Profiter d'une riche expériences accumulé depuis dès années chez vous dans votre salon , l'essayer c'est l'adopter ;)
             </p>
-            <a href="#" title="read more" class="read-more-btn">read more</a>
+            <a href="#" class="read-more-btn">Prenez un rendez vous</a>
           </div>
           <div class="story-text-right">
             <img src="images/shave-brush.jpg" alt="" />
