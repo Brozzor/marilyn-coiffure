@@ -10,9 +10,9 @@
             style="background-image: url(images/banner-03.jpg)"
           >
             <div class="banner-text">
-              <span>Coiffeuse a domicile</span>
+              <span>Coiffeuse/Barbière à domicile</span>
               <h1>Marilyn Coiffure</h1>
-              <p>Prenez rendez vous avec Marilyn en seulement deux clics</p>
+              <p>Prenez rendez vous avec Marilyn en seulement deux clics, profiter d'une experience de salon chez vous</p>
               <span class="much-img"
                 ><img src="images/much-img.png" alt=""
               /></span>
@@ -34,47 +34,45 @@
           </div>
           <div class="responsive-menu">
             <ul>
-              <li class="active"><a href="#home" title="Home">Home</a></li>
-              <li><a href="#about" title="Aboutus">Aboutus</a></li>
+              <li class="active"><a href="#home" title="Home">Accueil</a></li>
+              <li><a href="#about" title="Aboutus">A propos</a></li>
               <li><a href="#services" title="Services">Services</a></li>
               <li>
-                <a href="#testimonial" title="Testimonials">Testimonials</a>
+                <a href="#testimonial" title="Testimonials">Témoignages</a>
               </li>
-              <li><a href="#our-team" title="Our Team">Our Team</a></li>
-              <li><a href="#pricing" title="Pricing">Pricing</a></li>
+              <li><a href="#our-team" title="Our Team">L'équipe</a></li>
+              <li><a href="#pricing" title="Pricing">Tarifs</a></li>
               <li>
-                <a href="#appointment" title="Appointment">Appointment</a>
+                <a href="#appointment" title="Appointment">Rendez vous</a>
               </li>
               <li><a href="#gallery" title="Gallery">Gallery</a></li>
-              <li><a href="#blog" title="Latest Blog">Latest Blog</a></li>
-              <li><a href="#location" title="Location">Location</a></li>
+
             </ul>
           </div>
           <div class="table-cell">
-            <ul>
-              <li class="active"><a href="#home" title="Home">Home</a></li>
-              <li><a href="#about" title="Aboutus">Aboutus</a></li>
+            <ul style="text-align: center;">
+              <li class="active"><a href="#home" title="Home">Accueil</a></li>
+              <li><a href="#about" title="Aboutus">A propos</a></li>
               <li><a href="#services" title="Services">Services</a></li>
               <li>
-                <a href="#testimonial" title="Testimonials">Testimonials</a>
+                <a href="#testimonial" title="Testimonials">Témoignages</a>
               </li>
-              <li><a href="#our-team" title="Our Team">Our Team</a></li>
+              
             </ul>
           </div>
           <div class="logo">
             <a href="index.html" title="Barber Shop"
-              ><img src="img/logo.png" alt="logo"
+              ><img src="img/logo235.png" alt="logo marilyn coiffure"
             /></a>
           </div>
           <div class="table-cell">
-            <ul>
-              <li><a href="#pricing" title="Pricing">Pricing</a></li>
+            <ul style="text-align: center;">
+              <li><a href="#pricing" title="Pricing">Tarifs</a></li>
               <li>
-                <a href="#appointment" title="Appointment">Appointment</a>
+                <a href="#appointment" title="Appointment">Rendez vous</a>
               </li>
-              <li><a href="#gallery" title="Gallery">Gallery</a></li>
-              <li><a href="#blog" title="Latest Blog">Latest Blog</a></li>
-              <li><a href="#location" title="Location">Location</a></li>
+              <li><a href="#gallery" title="Gallery">Galerie</a></li>
+              <li><a href="#our-team" title="Our Team">L'équipe</a></li>
             </ul>
           </div>
         </div>
