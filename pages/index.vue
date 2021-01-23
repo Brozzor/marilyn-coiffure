@@ -8,50 +8,13 @@
           <div class="banner-slider-item">
             <div
               class="banner-slider-item-img"
-              style="background-image: url(images/banner-01.jpg)"
-            >
-              <div class="banner-text">
-                <span>we make your hair</span>
-                <h1>Look Perfect</h1>
-                <p>
-                  The best place for your hairstyleLorem Ipsum is simply
-                  dummytext.
-                </p>
-                <span class="much-img"
-                  ><img src="images/much-img.png" alt=""
-                /></span>
-              </div>
-            </div>
-          </div>
-          <div class="banner-slider-item">
-            <div
-              class="banner-slider-item-img"
-              style="background-image: url(images/banner-02.jpg)"
-            >
-              <div class="banner-text">
-                <span>we are Unique</span>
-                <h1>Barber Shop</h1>
-                <p>
-                  The best place for your hairstyleLorem Ipsum is simply
-                  dummytext.
-                </p>
-                <span class="much-img"
-                  ><img src="images/much-img.png" alt=""
-                /></span>
-              </div>
-            </div>
-          </div>
-          <div class="banner-slider-item">
-            <div
-              class="banner-slider-item-img"
               style="background-image: url(images/banner-03.jpg)"
             >
               <div class="banner-text">
-                <span>we are professional</span>
-                <h1>Man's Salon</h1>
+                <span>Coiffeuse a domicile</span>
+                <h1>Marilyn Coiffure</h1>
                 <p>
-                  The best place for your hairstyleLorem Ipsum is simply
-                  dummytext.
+                  Prenez rendez vous avec Marilyn en seulement deux clics
                 </p>
                 <span class="much-img"
                   ><img src="images/much-img.png" alt=""
