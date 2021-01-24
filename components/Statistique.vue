@@ -10,8 +10,8 @@
                 <img src="images/ic1.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">1250</h5>
-                <p>Years experience</p>
+                <h5 class="count">36</h5>
+                <p>Années d'expériences</p>
               </div>
             </div>
             <div class="counter-box">
@@ -19,8 +19,8 @@
                 <img src="images/ic2.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">1900</h5>
-                <p>Best Lookg</p>
+                <h5 class="count">+80000</h5>
+                <p>Coupes réalisées</p>
               </div>
             </div>
             <div class="counter-box">
@@ -28,8 +28,8 @@
                 <img src="images/ic3.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">1125</h5>
-                <p>Happy Clients</p>
+                <h5 class="count">+5000</h5>
+                <p>Clients satisfait</p>
               </div>
             </div>
             <div class="counter-box">
@@ -37,8 +37,8 @@
                 <img src="images/ic4.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">5000</h5>
-                <p>Branches</p>
+                <h5 class="count">5</h5>
+                <p>Formations par an</p>
               </div>
             </div>
           </div>
