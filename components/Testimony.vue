@@ -2,7 +2,7 @@
   <!--Testimonial section -->
   <section id="testimonial" class="container client-testimonial">
     <div class="row">
-      <h2 class="heading-title">50k+ Happy Clients</h2>
+      <h2 class="heading-title">+5000 Clients satisfait</h2>
 
       <div class="testimonial-wrapper">
         <div class="arrow-prev">
@@ -29,20 +29,6 @@
         </div>
       </div>
 
-      <div class="testimonial-logo clearfix">
-        <div class="testi-logo-img">
-          <a href="#" title=""><img src="images/logo1.png" alt="" /></a>
-        </div>
-        <div class="testi-logo-img">
-          <a href="#" title=""><img src="images/logo2.png" alt="" /></a>
-        </div>
-        <div class="testi-logo-img">
-          <a href="#" title=""><img src="images/logo3.png" alt="" /></a>
-        </div>
-        <div class="testi-logo-img">
-          <a href="#" title=""><img src="images/logo4.png" alt="" /></a>
-        </div>
-      </div>
     </div>
   </section>
 </template>
