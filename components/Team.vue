@@ -7,11 +7,11 @@
         <div class="our-team-box">
           <div class="our-team-inner">
             <div class="our-team-img">
-              <img src="images/team-img2.jpg" alt="" />
+              <img src="img/team/marilyn.jpg" alt="" />
             </div>
             <div class="our-team-text">
-              <h5>Marilyn</h5>
-              <span>Hair Cuter</span>
+              <h5>Marilyn Buisson</h5>
+              <span>Coiffeuse/barbière</span>
             </div>
           </div>
         </div>
