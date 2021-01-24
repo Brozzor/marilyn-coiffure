@@ -45,7 +45,7 @@
               <li>
                 <a href="#appointment" title="Appointment">Rendez vous</a>
               </li>
-              <li><a href="#gallery" title="Gallery">Gallery</a></li>
+              <li><a href="#gallery" title="Gallery">Galerie</a></li>
 
             </ul>
           </div>
