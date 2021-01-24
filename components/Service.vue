@@ -2,7 +2,7 @@
   <!--Service section -->
   <section id="services" class="container our-service">
     <div class="row">
-      <h2 class="heading-title">Our Services</h2>
+      <h2 class="heading-title">Nos services</h2>
       <div class="service-wrapper clearfix">
         <div class="service-block service-middle">
           <div class="service-block-inner service-1-hover">
