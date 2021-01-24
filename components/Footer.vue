@@ -70,7 +70,7 @@
 
 <script>
 export default {
-  name: 'Fouter',
+  name: 'Footer',
 }
 </script>
 

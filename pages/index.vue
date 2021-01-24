@@ -693,124 +693,19 @@
       </div>
     </section>
 
-    <!-- Latest-news section -->
-    <section id="blog" class="container latest-news">
-      <div class="row">
-        <h2 class="heading-title">Latest From News</h2>
-        <div class="latest-news-row clearfix">
-          <div class="latest-news-block">
-            <div class="latest-news-block-inner">
-              <div class="news-block-img">
-                <img src="images/news-img1.jpg" alt="" />
-              </div>
-              <div class="news-date">
-                <div class="news-date-inner">
-                  <b>09</b>
-                  may
-                </div>
-              </div>
-              <div class="news-text">
-                <span>By Admin</span><span>Hair, Coloring</span>
-                <p>
-                  Lorem Ipsum is simply ummy text of the printinorem Ipsum
-                  simply text of the priLorem Ipsum simply.
-                </p>
-                <a href="#" title="read-more"> read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="latest-news-block">
-            <div class="latest-news-block-inner">
-              <div class="news-block-img">
-                <img src="images/news-img2.jpg" alt="" />
-              </div>
-              <div class="news-date">
-                <div class="news-date-inner">
-                  <b>03</b>
-                  may
-                </div>
-              </div>
-              <div class="news-text">
-                <span>By Admin</span><span>Hair, Coloring</span>
-                <p>
-                  Lorem Ipsum is simply ummy text of the printinorem Ipsum
-                  simply text of the priLorem Ipsum simply.
-                </p>
-                <a href="#" title="read-more"> read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Us section -->
-    <section id="location" class="container map-banner">
-      <div class="row">
-        <div class="map-top-ic clearfix">
-          <div class="map-top-block">
-            <div class="map-inner-ic">
-              <img src="images/map-img1.png" alt="" />
-            </div>
-            <div class="map-top-text">
-              <span>Location</span>
-              <p>125 Brooklin, Huston, USA</p>
-            </div>
-          </div>
-          <div class="map-top-block">
-            <div class="map-inner-ic">
-              <img src="images/map-img2.png" alt="" />
-            </div>
-            <div class="map-top-text">
-              <span>Call us</span>
-              <p>+91 123 456 7890</p>
-            </div>
-          </div>
-          <div class="map-top-block">
-            <div class="map-inner-ic">
-              <img src="images/map-img3.png" alt="" />
-            </div>
-            <div class="map-top-text">
-              <span>Email Us</span>
-              <p>
-                <a href="mailto:support@gmail.com" title="support@gmail.com"
-                  >support@gmail.com</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="map-top-block">
-            <div class="map-inner-ic">
-              <img src="images/map-img4.png" alt="" />
-            </div>
-            <div class="map-top-text">
-              <span>Hours</span>
-              <p>Mon to Sat: 9AM to 7PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="map-img">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48331.30547831374!2d-74.05590848053964!3d40.79046415662649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25804d4293b57%3A0x5efe2629bb9f9381!2sNorth+Bergen%2C+NJ%2C+USA!5e0!3m2!1sen!2sin!4v1503222998458"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
     <Fouter></Fouter>
   </div>
 </template>
 
 <script>
 import AboutUs from '~/components/AboutUs.vue'
-import Fouter from '~/components/Fouter.vue'
+import Footer from '~/components/Footer.vue'
 import Service from '~/components/Service.vue'
 import Statistique from '~/components/Statistique.vue'
 import Team from '~/components/Team.vue'
 import Testimony from '~/components/Testimony.vue'
 export default {
-  components: { Service, AboutUs, Statistique, Testimony, Team, Fouter },
+  components: { Service, AboutUs, Statistique, Testimony, Team, Footer },
 
   Thead() {
     return {
