@@ -101,22 +101,33 @@
       >
         <p>03: Choisir une préférences de rendez vous</p>
         <div class="appointment-form-wrapper clearfix">
-          <div class="form-field">
-            <label for="day">Le jour </label>
-            <Datepicker id="day" :monday-first="true" :language="fr" :disabled-dates="disabledDates" v-model="form.dateReservation"></Datepicker>
+          <div>
+            <div class="form-field" style="float: inherit;">
+              <label for="day">Le jour </label>
+              <Datepicker
+                id="day"
+                :monday-first="true"
+                :language="fr"
+                :disabled-dates="disabledDates"
+                v-model="form.dateReservation"
+              ></Datepicker>
+            </div>
+            <div class="form-field" style="float: inherit;">
+              <label>L'horaire</label>
+              <select>
+                <option value="start_morning">Début de matinée</option>
+                <option value="end_morning">Fin de matinée</option>
+                <option value="lunch">Déjeuner</option>
+                <option value="start_afternoon">Début d'après-midi</option>
+                <option value="end_afternoon">Fin d'après-midi</option>
+              </select>
+            </div>
           </div>
 
-          <div class="form-field">
-            <label>Horaire</label>
-            <select>
-              <option value="start_morning">Début de matinée</option>
-              <option value="end_morning">Fin de matinée</option>
-              <option value="lunch">Déjeuner</option>
-              <option value="start_afternoon">Début d'après-midi</option>
-              <option value="end_afternoon">Fin d'après-midi</option>
-            </select>
-          </div>
-
+          <em class="info-date">
+            Après avoir confirmer votre demande vous serez recontactez dans moins
+            de 24h (jours ouvrés) pour convenir de l'horaire du rendez vous
+          </em>
           <div class="form-field submit-field">
             <input
               type="submit"
@@ -181,7 +192,7 @@
 </template>
 
 <script>
-import {fr} from 'vuejs-datepicker/dist/locale'
+import { fr } from 'vuejs-datepicker/dist/locale'
 import Datepicker from 'vuejs-datepicker'
 export default {
   name: 'Appointment',
@@ -193,7 +204,7 @@ export default {
       nbStep: 1,
       fr: fr,
       disabledDates: {
-          days: [0],
+        days: [0],
       },
       form: {
         name: '',
