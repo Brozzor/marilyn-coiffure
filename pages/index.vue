@@ -676,24 +676,23 @@
       </div>
     </section>
 
-    <!-- Join / Member section -->
     <section class="container join-member">
       <div class="row">
         <div class="join-member-left">
           <h3>
-            Want to be a menber ?<br />
-            Join with us
+            Vous voulez devenir client ?<br />
+            Prenez rendez vous
           </h3>
         </div>
         <div class="join-member-right">
-          <a href="#" title="Make an appointment" class="read-more-btn"
-            >Make an appointment</a
+          <a href="#appointment" title="Make an appointment" class="read-more-btn"
+            >Prendre un rendez vous</a
           >
         </div>
       </div>
     </section>
 
-    <Fouter></Fouter>
+    <Footer></Footer>
   </div>
 </template>
 
