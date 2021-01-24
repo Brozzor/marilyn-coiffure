@@ -25,6 +25,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/css/bootstrap.min.css',
     '@/assets/css/smoothslides.theme.css',
     '@/assets/css/slick.css',
     '@/assets/css/jquery.fancybox.css',
@@ -47,7 +48,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
