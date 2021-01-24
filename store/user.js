@@ -34,7 +34,7 @@ export const action = {
     },
     async signIn({ commit }, form) {
         try {
-            const response = await this.axios.post(
+            const response = await this.$axios.$post(
                 localStorage.server + '/connect',
                 form
             ).catch(err => {
