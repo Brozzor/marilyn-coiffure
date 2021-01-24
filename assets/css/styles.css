@@ -1464,7 +1464,7 @@ Appointment
 	width: 100%;
 }
 
-.form-field input[type="text"], .form-field input[type="email"], .form-field textarea {
+.form-field input[type="text"], .form-field input[type="email"], .form-field select, .form-field textarea, .form-field Datepicker {
 	font-size: 13px;
 	line-height: 16px;
 	position: relative;
