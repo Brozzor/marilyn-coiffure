@@ -134,14 +134,14 @@
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/razoe-shaver.png" alt="" />
+                    <img src="img/service/hair-dryer.svg" width="98px" alt="" />
                   </div>
-                  <h6>Taillage de barbe</h6>
+                  <h6>Brushing</h6>
                   <p>
-                    Besoin d'un entretien<br />
-                    pour votre barbe ? <br />
-                    Profiter d'une grande expérience<br />
-                    pour le taillage de celle-ci
+                    Profiter d'un brushing<br />
+                    parfait et sentez-vous <br />
+                    belle tout au long de votre soirée<br />
+                    <br />
                   </p>
                   <a href="#"  class="read-more-btn"
                     >tarifs</a
@@ -169,8 +169,7 @@
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-// optional style for arrows & dots
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import '@/assets/css/vue-slick-carousel-theme.css'
 export default {
   name: 'Service',
   components: { VueSlickCarousel },
