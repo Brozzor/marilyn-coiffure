@@ -15,15 +15,15 @@
                   <div class="service-ic">
                     <img src="images/classic-cut.png" alt="" />
                   </div>
-                  <h6>Classic Hair Cut</h6>
+                  <h6>Coupe de cheveux</h6>
                   <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
+                    Peu importe la taille<br />
+                    ou la forme de votre coiffure<br />
+                    nous réaliserons la coupe<br />
+                    de vos rêves
                   </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
+                  <a href="#"  class="read-more-btn"
+                    >tarifs</a
                   >
                 </div>
               </div>
@@ -37,90 +37,17 @@
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/clipper-cut.png" alt="" />
+                    <img src="img/service/cake.svg" style="color: #917758;" width="87px" alt="" />
                   </div>
-                  <h6>Clipper Cut</h6>
+                  <h6>Événement important</h6>
                   <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
+                    Marilyn s'occupera<br />
+                    de tous vos événements importants<br />
+                    rester beau en toute circonstances<br />
+                    <br />
                   </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="service-block service-middle">
-            <div class="service-block-inner service-3-hover">
-              <div class="service-block-image">
-                <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
-                </div>
-                <div class="service-block-image-wrap">
-                  <div class="service-ic">
-                    <img src="images/razoe-shaver.png" alt="" />
-                  </div>
-                  <h6>Razoe Shaver</h6>
-                  <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
-                  </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="service-block service-middle">
-            <div class="service-block-inner service-4-hover">
-              <div class="service-block-image">
-                <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
-                </div>
-                <div class="service-block-image-wrap">
-                  <div class="service-ic">
-                    <img src="images/classic-cut.png" alt="" />
-                  </div>
-                  <h6>Classic Hair Cut</h6>
-                  <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
-                  </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="service-block service-middle active">
-            <div class="service-block-inner service-5-hover">
-              <div class="service-block-image">
-                <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
-                </div>
-                <div class="service-block-image-wrap">
-                  <div class="service-ic">
-                    <img src="images/clipper-cut.png" alt="" />
-                  </div>
-                  <h6>Clipper Cut</h6>
-                  <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
-                  </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
+                  <a href="#pricing"  class="read-more-btn"
+                    >tarifs</a
                   >
                 </div>
               </div>
@@ -136,15 +63,88 @@
                   <div class="service-ic">
                     <img src="images/razoe-shaver.png" alt="" />
                   </div>
-                  <h6>Razoe Shaver</h6>
+                  <h6>Taillage de barbe</h6>
                   <p>
-                    Lorem Ipsum is simply<br />
-                    dummy text of the printinorem<br />
-                    Ipsum is simply mmy text of the printing<br />
-                    and typeseing industry Lorem
+                    Besoin d'un entretien<br />
+                    pour votre barbe ? <br />
+                    Profiter d'une grande expérience<br />
+                    pour le taillage de celle-ci
                   </p>
-                  <a href="#" title="read more" class="read-more-btn"
-                    >read more</a
+                  <a href="#pricing" class="read-more-btn"
+                    >tarifs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-block service-middle">
+            <div class="service-block-inner service-1-hover">
+              <div class="service-block-image">
+                <div class="service-wrap-img">
+                  <img src="images/service-img.jpg" alt="" />
+                </div>
+                <div class="service-block-image-wrap">
+                  <div class="service-ic">
+                    <img src="images/classic-cut.png" alt="" />
+                  </div>
+                  <h6>Coupe de cheveux</h6>
+                  <p>
+                    Peu importe la taille<br />
+                    ou la forme de votre coiffure<br />
+                    nous réaliserons la coupe<br />
+                    de vos rêves
+                  </p>
+                  <a href="#pricing"  class="read-more-btn"
+                    >Tarifs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-block service-middle active">
+            <div class="service-block-inner service-5-hover">
+              <div class="service-block-image">
+                <div class="service-wrap-img">
+                  <img src="images/service-img.jpg" alt="" />
+                </div>
+                <div class="service-block-image-wrap">
+                  <div class="service-ic">
+                    <img src="images/clipper-cut.png" alt="" />
+                  </div>
+                  <h6>Taillage de barbe</h6>
+                  <p>
+                    Besoin d'un entretien<br />
+                    pour votre barbe ? <br />
+                    Profiter d'une grande expérience<br />
+                    pour le taillage de celle-ci
+                  </p>
+                  <a href="#pricing" class="read-more-btn"
+                    >tarifs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-block service-middle">
+            <div class="service-block-inner service-6-hover">
+              <div class="service-block-image">
+                <div class="service-wrap-img">
+                  <img src="images/service-img.jpg" alt="" />
+                </div>
+                <div class="service-block-image-wrap">
+                  <div class="service-ic">
+                    <img src="images/razoe-shaver.png" alt="" />
+                  </div>
+                  <h6>Taillage de barbe</h6>
+                  <p>
+                    Besoin d'un entretien<br />
+                    pour votre barbe ? <br />
+                    Profiter d'une grande expérience<br />
+                    pour le taillage de celle-ci
+                  </p>
+                  <a href="#"  class="read-more-btn"
+                    >tarifs</a
                   >
                 </div>
               </div>
