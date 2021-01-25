@@ -76,7 +76,7 @@ export default {
         if (ret.error) {
           this.errorForm = ret.error
         } else {
-          console.log(ret)
+          this.$router.push('admin/dashboard')
         }
         return false
       } else {
