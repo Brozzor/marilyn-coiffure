@@ -16,7 +16,7 @@ export const actions = {
     async register({ commit }, form) {
         try {
             const response = await this.axios.post(
-                localStorage.server + '/register',
+                '/register',
                 form
             ).catch(err => {
                 if (err.response.status === 400) {
@@ -35,7 +35,7 @@ export const actions = {
     async signIn({ commit }, form) {
         try {
             const response = await this.$axios.$post(
-                localStorage.server + '/connect',
+                '/connect',
                 form
             ).catch(err => {
                 if (err.response.status === 400) {
