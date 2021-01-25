@@ -19,7 +19,7 @@
                 <img src="images/ic2.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">+80000</h5>
+                <h5 class="count">+50000</h5>
                 <p>Coupes réalisées</p>
               </div>
             </div>
@@ -28,7 +28,7 @@
                 <img src="images/ic3.png" alt="" />
               </div>
               <div class="counter-text">
-                <h5 class="count">+5000</h5>
+                <h5 class="count">+4000</h5>
                 <p>Clients satisfait</p>
               </div>
             </div>
@@ -49,8 +49,25 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+//import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
   name: 'Statistique',
+  components: { VueSlickCarousel },
+  data() {
+    return {
+      carousel: {
+        dots: true,
+        infinite: true,
+        initialSlide: 2,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+      },
+    }
+  },
 }
 </script>
 
