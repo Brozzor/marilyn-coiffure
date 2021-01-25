@@ -72,6 +72,7 @@ export default {
     async signIn() {
       if (this.formIsValid) {
         const ret = await this.reqsignIn(this.form)
+        console.log(ret)
         if (ret.error) {
           this.errorForm = ret.error
         } else {

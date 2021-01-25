@@ -34,15 +34,16 @@ export const actions = {
     },
     async signIn({ commit }, form) {
         try {
-            const response = await this.$axios.$post(
+            const response = await this.$axios.post(
                 '/connect',
-                form
+                form,
             ).catch(err => {
                 if (err.response.status === 400) {
                     throw new Error(err.response.data.status)
                 }
                 throw err
             })
+            console.log(response.headers)
             const token = response.headers.tokensession
             commit('SET_CURRENT_TOKEN', token)
             return true

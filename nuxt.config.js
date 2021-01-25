@@ -48,12 +48,20 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+  proxy: {
+    '/api/': { target: 'http://localhost:3000' }
+
+  },
+
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'https://marilyn-coiffure-back.herokuapp.com/'
+    baseURL: 'https://marilyn-coiffure-back.herokuapp.com/',
+    proxyHeaders: false,
+    credentials: false
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
