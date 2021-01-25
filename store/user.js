@@ -43,8 +43,8 @@ export const actions = {
                 }
                 throw err
             })
-            console.log(response.headers)
-            const token = response.headers.tokensession
+            console.log(response.data.tokensession)
+            const token = response.data.tokensession
             commit('SET_CURRENT_TOKEN', token)
             return true
         } catch (error) {
