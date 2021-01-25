@@ -48,15 +48,15 @@
           </div>
           <div class="form-field" style="width: 65%">
             <label>Rue</label>
-            <input type="text" v-model="form.address.street" />
+            <input type="text" v-model="form.street" />
           </div>
           <div class="form-field" style="width: 25%">
             <label>Ville</label>
-            <input type="text" v-model="form.address.city" />
+            <input type="text" v-model="form.city" />
           </div>
           <div class="form-field" style="width: 10%">
             <label>Code postal</label>
-            <input type="text" v-model="form.address.zip" />
+            <input type="text" v-model="form.zip" />
           </div>
 
           <div class="form-field submit-field">
@@ -77,7 +77,7 @@
         <div class="appointment-form-wrapper clearfix">
           <div class="form-field full">
             <label>Ecrivez ce que vous désirez</label>
-            <textarea></textarea>
+            <textarea v-model="form.comment"></textarea>
           </div>
           <div class="form-field submit-field">
             <input
@@ -102,19 +102,19 @@
         <p>03: Choisir une préférences de rendez vous</p>
         <div class="appointment-form-wrapper clearfix">
           <div>
-            <div class="form-field" style="float: inherit;">
+            <div class="form-field" style="float: inherit">
               <label for="day">Le jour </label>
               <Datepicker
                 id="day"
                 :monday-first="true"
                 :language="fr"
                 :disabled-dates="disabledDates"
-                v-model="form.dateReservation"
+                v-model="form.reservation"
               ></Datepicker>
             </div>
-            <div class="form-field" style="float: inherit;">
+            <div class="form-field" style="float: inherit">
               <label>L'horaire</label>
-              <select>
+              <select v-model="form.timetables">
                 <option value="start_morning">Début de matinée</option>
                 <option value="end_morning">Fin de matinée</option>
                 <option value="lunch">Déjeuner</option>
@@ -125,8 +125,9 @@
           </div>
 
           <em class="info-date">
-            Après avoir confirmer votre demande vous serez recontactez dans moins
-            de 24h (jours ouvrés) pour convenir de l'horaire du rendez vous
+            Après avoir confirmer votre demande vous serez recontactez dans
+            moins de 24h (jours ouvrés) pour convenir de l'horaire du rendez
+            vous
           </em>
           <div class="form-field submit-field">
             <input
@@ -138,7 +139,7 @@
             <input
               type="submit"
               name="submit"
-              style="max-width: 160px;"
+              style="max-width: 160px"
               @click="sendReservation()"
               value="Envoyez ma demande"
             />
@@ -195,10 +196,13 @@
 <script>
 import { fr } from 'vuejs-datepicker/dist/locale'
 import Datepicker from 'vuejs-datepicker'
+import { mapActions } from 'vuex'
+
 export default {
   name: 'Appointment',
   components: {
     Datepicker,
+    mapActions
   },
   data() {
     return {
@@ -211,19 +215,29 @@ export default {
         name: '',
         mail: '',
         mobile: '',
-        address: {
-          street: '',
-          city: '',
-          zip: '',
-        },
-        dateReservation: new Date(),
+        street: '',
+        city: '',
+        zip: '',
+        comment: '',
+        reservation: new Date(),
+        timetables: ''
       },
+      errorForm: ""
     }
   },
-  methods:{
-      async sendReservation(){
-          console.log('envoie')
+  methods: {
+    ...mapActions({ reqReservation: 'booking/booking' }),
+    async sendReservation() {
+      this.form.reservation = parseInt(this.form.reservation.getTime() / 1000);
+      this.form.mobile = parseInt(this.form.mobile);
+      const ret = await this.reqReservation(this.form)
+      if (ret.error) {
+        this.errorForm = ret.error
+      } else {
+        console.log(ret)
       }
-  }
+      return false
+    },
+  },
 }
 </script>
