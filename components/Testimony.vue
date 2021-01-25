@@ -2,31 +2,33 @@
   <!--Testimonial section -->
   <section id="testimonial" class="container client-testimonial">
     <div class="row">
-      <h2 class="heading-title">+5000 Clients satisfait</h2>
-
-      <div class="testimonial-wrapper">
-        <div class="arrow-prev">
-          <span class="arrow">&#x2039;</span>
-        </div>
-        <div
-          class="testimonial-main"
-          v-for="(testimony, index) in testimonials"
-          :key="index"
-          v-show="index == 0"
-        >
+      <h2 class="heading-title">+4000 clients satisfait</h2>
+      <div >
+        <VueSlickCarousel class="testimonial-wrapper" v-bind="carousel" >
+        <div class="testimonial-main">
           <div class="testimonial-box">
-            <p v-html="testimony.text"></p>
-            <span
-              ><b>{{ testimony.name }}</b></span
-            >
+            <p>
+              Mon conjoint y va depuis plusieurs années et mon fils depuis tout petit on est jamais déçu et Marilyn est très aimable et gentille je recommande les yeux fermés
+            </p>
+            <span><b>Marco polo</b></span>
           </div>
           <div class="test-img">
             <img src="images/testi-img.png" alt="" />
           </div>
         </div>
-        <div class="arrow-next">
-          <span class="arrow">&#x203A;</span>
+        <div class="testimonial-main">
+          <div class="testimonial-box">
+            <p>
+              J'y ai été pour la première fois aujourd'hui :  coiffeuse très sympas, minutieux, coupe propre, dégradé impeccable ! Coupe qui répond parfaitement à la demande du client et ce, pour un prix minime !
+Je recommande totalement ! 👍
+            </p>
+            <span><b>Didier raoult</b></span>
+          </div>
+          <div class="test-img">
+            <img src="images/testi-img.png" alt="" />
+          </div>
         </div>
+        </VueSlickCarousel>
       </div>
 
     </div>
@@ -34,20 +36,20 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+
 export default {
   name: 'Testimony',
+  components: { VueSlickCarousel },
   data() {
     return {
-      testimonials: [
-        {
-          text: ` Lorem Ipsum is simply dummy text of the printing and typing indus try<br />Lorem Ipsum has een the indus try's stmmy text of the printing and<br /> typeseing industry.`,
-          name: 'Devil Shohemark',
-        },
-        {
-          text: ` Lorem Ipsum is simply dummy text of the printing and typing indus try<br />Lorem Ipsum has een the indus try's stmmy text of the printing and<br /> typeseing industry.`,
-          name: 'Pauline Lefievre',
-        },
-      ],
+      carousel: {
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+
+      },
     }
   },
 }
