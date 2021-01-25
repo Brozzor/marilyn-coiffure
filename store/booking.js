@@ -14,11 +14,11 @@ export const actions = {
                 form
             ).catch(err => {
                 if (err.response.status === 400) {
-                    throw new Error(err.response.data.status)
+                    throw new Error(err.response.data.error)
                 }
+                
                 throw err
             })
-
             return true
         } catch (error) {
             return { error: error.message }

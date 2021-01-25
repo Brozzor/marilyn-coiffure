@@ -2,6 +2,10 @@
   <section id="appointment" class="container make-appointment">
     <div class="row">
       <h2 class="heading-title">Prendre un rendez vous</h2>
+      <div v-if="errorForm" class="alert-error">
+        <p>{{ errorForm }}</p>
+      </div>
+      
       <div class="appointment-header">
         <div class="appointment-cell" @click="nbStep = 1">
           <div class="appointment-inner" :class="{ current: nbStep == 1 }">
@@ -194,13 +198,16 @@ export default {
   methods: {
     ...mapActions({ reqReservation: 'booking/booking' }),
     async sendReservation() {
+      let temp = this.form.reservation;
       this.form.reservation = parseInt(this.form.reservation.getTime() / 1000);
       this.form.mobile = parseInt(this.form.mobile);
       const ret = await this.reqReservation(this.form)
+      this.form.reservation = temp;
       if (ret.error) {
         this.errorForm = ret.error
       } else {
         this.nbStep = 4;
+        this.errorForm = ""
       }
       return false
     },
