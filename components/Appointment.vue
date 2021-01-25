@@ -151,43 +151,9 @@
         class="appointment-form tab-content2 clearfix"
         :class="{ current: nbStep == 4 }"
       >
-        <p>04: Thank You Message</p>
-        <div class="appointment-form-wrapper clearfix">
-          <div class="form-field">
-            <label>Name</label>
-            <input type="text" name="Name" />
-          </div>
-          <div class="form-field">
-            <label>Email</label>
-            <input type="email" name="Email" />
-          </div>
-          <div class="form-field">
-            <label>Phone</label>
-            <input type="text" name="Phone" />
-          </div>
-          <div class="form-field calender">
-            <label>Date of Birth</label>
-            <input type="text" name="dob" />
-          </div>
-          <div class="form-field full">
-            <label>Comments</label>
-            <textarea></textarea>
-          </div>
-          <div class="form-field submit-field">
-            <input
-              type="submit"
-              name="submit"
-              @click="nbStep--"
-              value="précédent"
-            />
-            <input
-              type="submit"
-              name="submit"
-              @click="nbStep++"
-              value="Envoyer"
-            />
-          </div>
-        </div>
+        <p>Bravo</p>
+        <p>Votre demande a été envoyer avec succès nous allons vous recontacter au plus vite</p>
+        
       </div>
     </div>
   </section>
@@ -234,7 +200,7 @@ export default {
       if (ret.error) {
         this.errorForm = ret.error
       } else {
-        console.log(ret)
+        this.nbStep = 4;
       }
       return false
     },
