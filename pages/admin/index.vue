@@ -68,11 +68,10 @@ export default {
     },
   },
   methods: {
-    ...mapActions({ signIn: 'user/signIn' }),
+    ...mapActions({ reqsignIn: 'user/signIn' }),
     async signIn() {
-      console.log(this.form)
       if (this.formIsValid) {
-        const ret = await this.signIn(this.form)
+        const ret = await this.reqsignIn(this.form)
         if (ret.error) {
           this.errorForm = ret.error
         } else {
