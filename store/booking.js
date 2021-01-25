@@ -6,6 +6,6 @@ export const mutations = {
 
 }
 
-export const action = {
+export const actions = {
 
 }
