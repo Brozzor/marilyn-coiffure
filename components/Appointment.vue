@@ -119,7 +119,7 @@
             <div class="form-field" style="float: inherit">
               <label>L'horaire</label>
               <select v-model="form.timetables">
-                <option value="start_morning">Début de matinée</option>
+                <option value="start_morning" selected>Début de matinée</option>
                 <option value="end_morning">Fin de matinée</option>
                 <option value="lunch">Déjeuner</option>
                 <option value="start_afternoon">Début d'après-midi</option>

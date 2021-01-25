@@ -800,36 +800,7 @@ service slider
 
 -----------------------------------------------------------------------------------*/
 
-.slick-dots {
-	list-style: none;
-	text-align: center;
-	margin-top: 44px;
-}
 
-.slick-dots li {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 10px;
-}
-
-.slick-dots li:first-child {
-	padding-left: 0;
-}
-
-.slick-dots li button {
-	background: none;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #917758;
-	cursor: pointer;
-	font-size: 0;
-	border-radius: 100%;
-	outline: none;
-}
-
-.slick-dots .slick-active button {
-	background: #917758; 
-}
 
 .service-wrapper .slick-arrow,  .slick-arrow {
 	position: absolute;

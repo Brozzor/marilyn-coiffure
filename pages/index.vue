@@ -56,31 +56,5 @@ export default {
     Pricing,
   },
 
-  Thead() {
-    return {
-      script: [
-        {
-          src: '/js/jquery1.12.4.min.js',
-          type: 'text/javascript',
-        },
-        {
-          src: '/js/jquery.fancybox.js',
-          type: 'text/javascript',
-        },
-        {
-          src: '/js/smoothslides-2.2.1.min.js',
-          type: 'text/javascript',
-        },
-        {
-          src: '/js/slick.min.js',
-          type: 'text/javascript',
-        },
-        {
-          src: '/js/custom.js',
-          type: 'text/javascript',
-        },
-      ],
-    }
-  },
 }
 </script>
