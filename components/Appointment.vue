@@ -138,8 +138,9 @@
             <input
               type="submit"
               name="submit"
-              @click="nbStep++"
-              value="suivant"
+              style="max-width: 160px;"
+              @click="sendReservation()"
+              value="Envoyez ma demande"
             />
           </div>
         </div>
@@ -219,5 +220,10 @@ export default {
       },
     }
   },
+  methods:{
+      async sendReservation(){
+          console.log('envoie')
+      }
+  }
 }
 </script>
