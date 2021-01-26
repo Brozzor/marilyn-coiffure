@@ -1,168 +1,33 @@
 <template>
     <section id="pricing" class="container our-pricing">
       <div class="row">
-        <h2 class="heading-title">Our Pricing</h2>
+        <h2 class="heading-title">Nos tarifs</h2>
         <div class="our-pricing-wrapper clearfix">
-          <div class="our-price-box">
+          
+          <div v-for="item in pricingMen" :key="item.id" class="our-price-box">
             <div class="our-price-box-inner clearfix">
               <div class="our-price-box-left">
                 <div class="our-price-ic">
-                  <img src="images/price-ic1.png" alt="" />
+                  <img :src="item.img" :alt="item.altImg" />
                 </div>
                 <div class="our-price-text">
-                  <h4>Classic Hair Cut</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
-                </div>
-              </div>
-              <div class="our-price-box-right">
-                <div class="price-discount">
-                  <span>25% off</span>
-                </div>
-                <div class="start-price">
-                  <span>start from</span>
-                  <b>$ 12</b>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="our-price-box">
-            <div class="our-price-box-inner clearfix">
-              <div class="our-price-box-left">
-                <div class="our-price-ic">
-                  <img src="images/price-ic2.png" alt="" />
-                </div>
-                <div class="our-price-text">
-                  <h4>Razoe Shaver</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
+                  <h4>{{ item.title }}</h4>
+                  <p>{{ item.comment }}</p>
                 </div>
               </div>
               <div class="our-price-box-right">
                 <div class="table">
                   <div class="table-cell">
                     <div class="start-price">
-                      <span>start from</span>
-                      <b>$ 12</b>
+                      <span>À partir</span>
+                      <b>{{ item.price }} €</b>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="our-price-box">
-            <div class="our-price-box-inner clearfix">
-              <div class="our-price-box-left">
-                <div class="our-price-ic">
-                  <img src="images/price-ic3.png" alt="" />
-                </div>
-                <div class="our-price-text">
-                  <h4>Combing</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
-                </div>
-              </div>
-              <div class="our-price-box-right">
-                <div class="table">
-                  <div class="table-cell">
-                    <div class="start-price">
-                      <span>start from</span>
-                      <b>$ 12</b>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="our-price-box">
-            <div class="our-price-box-inner clearfix">
-              <div class="our-price-box-left">
-                <div class="our-price-ic">
-                  <img src="images/price-ic4.png" alt="" />
-                </div>
-                <div class="our-price-text">
-                  <h4>Mackup</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
-                </div>
-              </div>
-              <div class="our-price-box-right">
-                <div class="price-discount">
-                  <span>25% off</span>
-                </div>
-                <div class="start-price">
-                  <span>start from</span>
-                  <b>$ 12</b>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="our-price-box">
-            <div class="our-price-box-inner clearfix">
-              <div class="our-price-box-left">
-                <div class="our-price-ic">
-                  <img src="images/price-ic5.png" alt="" />
-                </div>
-                <div class="our-price-text">
-                  <h4>Clipper Cut</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
-                </div>
-              </div>
-              <div class="our-price-box-right">
-                <div class="table">
-                  <div class="table-cell">
-                    <div class="start-price">
-                      <span>start from</span>
-                      <b>$ 12</b>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="our-price-box">
-            <div class="our-price-box-inner clearfix">
-              <div class="our-price-box-left">
-                <div class="our-price-ic">
-                  <img src="images/price-ic6.png" alt="" />
-                </div>
-                <div class="our-price-text">
-                  <h4>Mustache</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printorem Ipsum is
-                    simply mmy text of the printing and typing.
-                  </p>
-                  <a href="#" title="more" class="more">more</a>
-                </div>
-              </div>
-              <div class="our-price-box-right">
-                <div class="table">
-                  <div class="table-cell">
-                    <div class="start-price">
-                      <span>start from</span>
-                      <b>$ 12</b>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -171,5 +36,40 @@
 <script>
 export default {
   name: 'Pricing',
+  data(){
+    return {
+      pricingMen: [
+        {
+          id: 1,
+          price: 15,
+          title: "Forfait coupe ( sans shampooing )",
+          img: "images/price-ic1.png",
+          altImg: "ciseaux Marilyn Coiffure"
+        },
+        {
+          id: 2,
+          price: 18,
+          title: "Forfait coupe ( shampooing, séchage inclus )",
+          img: "images/price-ic1.png",
+          altImg: "ciseaux Marilyn Coiffure"
+        },
+        {
+          id: 3,
+          price: 34,
+          title: "Décoloration",
+          img: "images/price-ic4.png",
+          altImg: "produits Marilyn Coiffure"
+        },
+        {
+          id: 4,
+          price: 30,
+          title: "Couleur fantaisie",
+          img: "images/price-ic4.png",
+          altImg: "produits Marilyn Coiffure"
+        },
+
+      ]
+    }
+  }
 }
 </script>
