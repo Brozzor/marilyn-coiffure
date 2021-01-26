@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+  <Nuxt />
 </template>
 
 <script>
-import '@/assets/css/bootstrap.min.css'
+export default {
+  middleware: 'auth',
+}
 </script>
 
 <style>
