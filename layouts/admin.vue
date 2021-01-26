@@ -8,7 +8,7 @@
         id="main-content"
       >
         <div class="p-6 bg-gray-100 mb-20"><Nuxt /></div>
-        <Footer></Footer>
+        <FooterAdmin></FooterAdmin>
       </div>
     </div>
   </div>
