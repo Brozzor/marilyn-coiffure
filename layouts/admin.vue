@@ -1,5 +1,7 @@
 <template>
-  <div>Page non trouvé</div>
+  <div>
+    <Nuxt />
+  </div>
 </template>
 
 <script>

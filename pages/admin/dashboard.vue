@@ -1,9 +1,14 @@
 <template>
-  <div>dashboard</div>
+  <div><Sidenav></Sidenav></div>
 </template>
 
 <script>
-export default {}
+import Sidenav from '~/components/admin/Sidenav.vue'
+
+export default {
+  layout: 'admin',
+  components: { Sidenav },
+}
 </script>
 
 <style>
