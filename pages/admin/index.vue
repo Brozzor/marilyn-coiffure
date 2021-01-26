@@ -41,8 +41,9 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
 
+import { mapState, mapActions } from 'vuex'
+import '@/assets/css/bootstrap.min.css'
 export default {
   data() {
     return {

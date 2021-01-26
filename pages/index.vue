@@ -43,6 +43,7 @@ import Statistique from '~/components/Statistique.vue'
 import Team from '~/components/Team.vue'
 import Testimony from '~/components/Testimony.vue'
 import Pricing from '~/components/Pricing.vue'
+import '@/assets/css/styles.css'
 export default {
   components: {
     Service,

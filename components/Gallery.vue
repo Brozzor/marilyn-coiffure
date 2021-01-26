@@ -7,16 +7,10 @@
         <img src="images/g3.png" alt="" />
       </div>
       <div class="row">
-        <h2 class="heading-title">Our Gallery</h2>
+        <h2 class="heading-title">Notre Gallerie</h2>
         <div class="g1-ic">
           <img src="images/g1.png" alt="" />
         </div>
-        <ul class="tabs">
-          <li class="tab-link current" data-tab="tab-1">Classic Hair Cut</li>
-          <li class="tab-link" data-tab="tab-2">Clipper Cut</li>
-          <li class="tab-link" data-tab="tab-3">Razoe Shaver</li>
-          <li class="tab-link" data-tab="tab-4">Hair Style</li>
-        </ul>
         <div id="tab-1" class="tab-content current">
           <div class="tab-col">
             <div class="gallery-img">
