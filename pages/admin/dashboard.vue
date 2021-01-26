@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import Sidenav from '~/components/admin/Sidenav.vue'
-
 export default {
   layout: 'admin',
 }
