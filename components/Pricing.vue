@@ -55,6 +55,7 @@
           </div>
         </div>
       </div>
+      <em style="color: #8a8682; font-size: 11px;">Les prix peuvent être différent en fonction de la longueur des cheveux et des produits utilisés.</em>
     </div>
   </section>
 </template>
