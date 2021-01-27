@@ -135,7 +135,7 @@ export default {
         if (ret.error) {
           this.errorForm = ret.error
         } else {
-          this.$router.push('admin/dashboard')
+          this.$router.push('/admin/dashboard')
         }
         return false
       } else {

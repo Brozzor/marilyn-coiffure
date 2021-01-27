@@ -4,11 +4,12 @@ export const mutations = {}
 
 export const actions = {
   async dashboard({ commit }) {
-    console.log('ttt')
+
     try {
         console.log('ttt')
-      const response = await this.$axios.get('/admin/dashboard', {
+      const response = await this.$axios.$get('/admin/dashboard', {
           headers: {
+            'Access-Control-Allow-Origin': '*',
             tokenSession: localStorage.tokenSession,
           }
         })
