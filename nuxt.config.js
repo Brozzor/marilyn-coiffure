@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   router: {
-    linkActiveClass: 'active-link'
+    linkExactActiveClass: 'bg-gray-200'
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'server',

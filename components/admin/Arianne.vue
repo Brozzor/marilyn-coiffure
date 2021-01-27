@@ -15,7 +15,8 @@
         </svg>
       </li>
       <li class="flex items-center">
-        <NuxtLink :to="{ name: $route.name }" class="text-gray-600 capitalize">
+        <NuxtLink :to="{ name: $route.name }" class="text-gray-600 capitalize" style="background-color: rgb(243,244,246)!important;">
+
           {{ this.$route.name.split('-')[1] }}</NuxtLink
         >
         <a href="#" class="text-gray-600"></a>
