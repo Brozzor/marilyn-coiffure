@@ -78,7 +78,6 @@
     <div class="mb-4 px-4">
       <p class="pl-4 text-sm font-semibold mb-1">AUTRES</p>
 
-
       <div
         class="w-full flex items-center text-brown-600 h-10 pl-4 hover:bg-gray-200 rounded-lg cursor-pointer"
       >
@@ -100,15 +99,14 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Sidebar',
+  name: 'Sidenav',
   methods: {
-    logout(){
-      localStorage.clear();
+    logout() {
+      localStorage.clear()
       this.$router.push('/admin')
-    }
-  }
+    },
+  },
 }
 </script>
 

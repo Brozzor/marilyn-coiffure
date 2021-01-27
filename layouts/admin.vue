@@ -7,6 +7,11 @@
         id="main-content"
       >
         <div class="p-6 bg-gray-100 mb-20">
+          <div class="sticky top-0 z-40">
+            <div
+              class="w-full h-20 px-6 bg-gray-100 border-b flex items-center justify-between"
+            ></div>
+          </div>
           <arianne></arianne>
           <Nuxt />
         </div>

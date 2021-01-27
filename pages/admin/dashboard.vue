@@ -7,11 +7,9 @@
 </template>
 
 <script>
-import Arianne from '~/components/admin/Arianne.vue'
-
 import ListCard from '~/components/admin/ListCard.vue'
 export default {
-  components: { ListCard, Arianne },
+  components: { ListCard },
   layout: 'admin',
   data() {
     return {}
