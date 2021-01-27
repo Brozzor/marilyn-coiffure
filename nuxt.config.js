@@ -30,7 +30,9 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/axios'
+    '~/plugins/axios',
+    '~plugins/v-calendar.js'
+
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -51,8 +53,8 @@ export default {
   ],
   proxy: {
     // '/api/': { target: 'https://marilyn-coiffure-back.herokuapp.com', pathRewrite: {'^/api/': ''}, changeOrigin: true }
- 
-   }, 
+
+  },
 
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
