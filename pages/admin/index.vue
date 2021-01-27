@@ -142,12 +142,6 @@ export default {
       }
     },
   },
-  middleware({ store, redirect }) {
-    // If the user is authenticated
-    if (store.state.user.authDisplay) {
-      return redirect('/admin/dashboard')
-    }
-  },
 }
 </script>
 
