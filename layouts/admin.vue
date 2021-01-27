@@ -17,6 +17,18 @@
 <script>
 export default {
   middleware: 'auth',
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          type: 'text/css',
+          href:
+            'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css',
+        },
+      ],
+    }
+  },
 }
 </script>
 

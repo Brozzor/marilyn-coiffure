@@ -1,41 +1,106 @@
 <template>
-  <div class="container">
-    <div class="">
+  <div class="flex content-center justify-center mt-20">
+    <div class="w-full max-w-xs">
+      <center>
+        <img class="mb-2 w-48" src="/img/logo.png" />
+      </center>
       <form
-        class="d-flex flex-column justify-content-center rounded my-md-5 bg-white p-md-5"
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        @submit.prevent="signIn"
       >
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="type">
+            Mail
+          </label>
           <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             v-model="form.mail"
+            type="text"
+            placeholder="Enter your mail address"
+            v-on:change="form.mailClick = true"
           />
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
+          <p
+            v-if="!mailIsValid && form.mailClick"
+            class="text-red-500 text-xs italic"
           >
+            Please enter valid mail
+          </p>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            v-model="form.password"
-          />
+        <div class="mb-2">
+          <div class="mb-2">
+            <label
+              class="text-gray-700 text-sm font-bold mb-2 space-x-16"
+              for="type"
+            >
+              <div class="inline-block">Password</div>
+              <div class="inline-block">
+                <a
+                  class="font-bold text-xs text-red-300 hover:text-red-500"
+                  href="href"
+                  @click.stop.prevent="displayModalResetPassword()"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              v-model="form.password"
+              type="password"
+              placeholder="Enter your password"
+              v-on:change="form.passwordClick = true"
+            />
+            <p
+              v-if="!passwordIsValid && form.passwordClick"
+              class="text-red-500 text-xs italic"
+            >
+              Please enter valid password (min length 6) and (max length 24)
+            </p>
+          </div>
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
+
+        <div class="mb-2">
+          <button
+            :class="{
+              'bg-red-500': true,
+              'hover:bg-red-700': true,
+              'text-white': true,
+              'font-bold': true,
+              'w-full': true,
+              'py-2': true,
+              'rounded': true,
+              'focus:outline-none': true,
+              'focus:shadow-outline': true,
+              'opacity-50': !formIsValid,
+              'cursor-not-allowed': !formIsValid,
+            }"
+            type="submit"
           >
+            Sign In
+          </button>
         </div>
-        <button type="submit" @click.prevent="signIn()" class="btn btn-primary">
-          Connexion
-        </button>
+
+        <p class="font-bold text-gray-700 text-center">
+          You dont have account?
+          <a
+            class="inline-block align-baseline text-red-500 hover:text-red-800"
+            href="href"
+            @click.stop.prevent="changeDisplay()"
+          >
+            Register
+          </a>
+        </p>
+
+        <div
+          class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-4"
+          role="alert"
+          v-if="errorForm"
+        >
+          <strong class="font-bold">Login Error !</strong><br />
+          <span class="block sm:inline">{{ errorForm }}</span>
+        </div>
       </form>
+
     </div>
   </div>
 </template>
@@ -44,12 +109,19 @@
 import { mapState, mapActions } from 'vuex'
 
 export default {
+  head(){
+    return {
+      link: [{ rel:"stylesheet", type:"text/css", href:'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css' }]
+    }
+  },
   data() {
     return {
       regMail: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
       form: {
         mail: '',
+        mailClick: false,
         password: '',
+        passwordClick: false,
       },
       errorForm: '',
       isModalResetOpen: false,
