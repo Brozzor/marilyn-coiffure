@@ -2,7 +2,7 @@
   <div>
     <div></div>
 
-    <ListCard :allInfos="allInfos"></ListCard>
+    <ListCard :allInfos="allInfos" :toto="allInfos.nbBookingLast30Days"></ListCard>
   </div>
 </template>
 
@@ -14,7 +14,9 @@ export default {
   layout: 'admin',
   data() {
     return {
-      allInfos: {}
+      allInfos: {
+        nbBookingLast30Days: 0
+      }
     }
   },
   mounted() {
@@ -24,7 +26,7 @@ export default {
     ...mapActions({ getDash: 'admin/dashboard' }),
     async getInfos() {
       const ret = await this.getDash()
-      console.log(ret)
+      this.allInfos = ret;
       return false
     },
   },

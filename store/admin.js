@@ -6,10 +6,8 @@ export const actions = {
   async dashboard({ commit }) {
 
     try {
-        console.log('ttt')
       const response = await this.$axios.$get('/admin/dashboard', {
           headers: {
-            'Access-Control-Allow-Origin': '*',
             tokenSession: localStorage.tokenSession,
           }
         })
@@ -19,7 +17,6 @@ export const actions = {
           }
           throw err
         })
-        console.log(response)
       return response
     } catch (error) {
       console.log(error)
