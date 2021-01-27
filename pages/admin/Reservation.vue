@@ -68,6 +68,7 @@
 
             <td class="text-center" >
               <button
+              @click="userProfile(item._id)"
                 class="bg-brown-600 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-indigo-500 hover:text-black"
               >
                 Voir
@@ -117,6 +118,9 @@ export default {
           return "<font color='#e7b52b'>Impayer</font>"
           break;
       }
+    },
+    userProfile(id) {
+      this.$router.push({ path: '/admin/editReservation', query: { id: id } })
     }
   },
 }

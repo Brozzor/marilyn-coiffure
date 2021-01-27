@@ -1,7 +1,7 @@
 <template>
   <!-- Footer section -->
   <section class="container footer">
-    <div class="row">
+    <div class="row" >
       <div class="footer-nav">
         <ul>
           <li><a href="#home">Accueil</a></li>
@@ -58,6 +58,3 @@ export default {
   name: 'Footer',
 }
 </script>
-
-<style>
-</style>
