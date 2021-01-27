@@ -23,7 +23,7 @@
             v-if="!mailIsValid && form.mailClick"
             class="text-red-500 text-xs italic"
           >
-            Please enter valid mail
+            Merci d'entrez email valide
           </p>
         </div>
         <div class="mb-2">
@@ -33,15 +33,7 @@
               for="type"
             >
               <div class="inline-block">Password</div>
-              <div class="inline-block">
-                <a
-                  class="font-bold text-xs text-red-300 hover:text-red-500"
-                  href="href"
-                  @click.stop.prevent="displayModalResetPassword()"
-                >
-                  Forgot your password?
-                </a>
-              </div>
+
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
@@ -54,7 +46,7 @@
               v-if="!passwordIsValid && form.passwordClick"
               class="text-red-500 text-xs italic"
             >
-              Please enter valid password (min length 6) and (max length 24)
+              Merci d'entrez un mot de passe valide
             </p>
           </div>
         </div>
@@ -62,13 +54,13 @@
         <div class="mb-2">
           <button
             :class="{
-              'bg-red-500': true,
-              'hover:bg-red-700': true,
+              'bg-brown-600': true,
+              'hover:bg-gray-700': true,
               'text-white': true,
               'font-bold': true,
               'w-full': true,
               'py-2': true,
-              'rounded': true,
+              rounded: true,
               'focus:outline-none': true,
               'focus:shadow-outline': true,
               'opacity-50': !formIsValid,
@@ -76,20 +68,9 @@
             }"
             type="submit"
           >
-            Sign In
+            Connexion
           </button>
         </div>
-
-        <p class="font-bold text-gray-700 text-center">
-          You dont have account?
-          <a
-            class="inline-block align-baseline text-red-500 hover:text-red-800"
-            href="href"
-            @click.stop.prevent="changeDisplay()"
-          >
-            Register
-          </a>
-        </p>
 
         <div
           class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-4"
@@ -100,7 +81,6 @@
           <span class="block sm:inline">{{ errorForm }}</span>
         </div>
       </form>
-
     </div>
   </div>
 </template>
@@ -109,9 +89,16 @@
 import { mapState, mapActions } from 'vuex'
 
 export default {
-  head(){
+  head() {
     return {
-      link: [{ rel:"stylesheet", type:"text/css", href:'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css' }]
+      link: [
+        {
+          rel: 'stylesheet',
+          type: 'text/css',
+          href:
+            'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css',
+        },
+      ],
     }
   },
   data() {
@@ -160,4 +147,11 @@ export default {
 </script>
 
 <style>
+.bg-brown-600 {
+  background-color: #917758;
+}
+.bg-brown-700 {
+  background-color: #887054;
+}
+
 </style>
