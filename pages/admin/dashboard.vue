@@ -1,7 +1,7 @@
 <template>
   <div>
     <div></div>
-    <arianne></arianne>
+
     <list-card></list-card>
   </div>
 </template>
