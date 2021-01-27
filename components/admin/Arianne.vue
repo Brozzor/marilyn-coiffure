@@ -15,7 +15,12 @@
         </svg>
       </li>
       <li class="flex items-center">
-        <NuxtLink> {{ this.$route.params.name }}</NuxtLink>
+        <NuxtLink
+          :to="{ name: $route.name + '22' }"
+          class="text-gray-600 capitalize"
+        >
+          {{ this.$route.name.split('-')[1] }}</NuxtLink
+        >
         <a href="#" class="text-gray-600"></a>
       </li>
     </ol>
@@ -24,7 +29,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Arianne',
+}
 </script>
 
 <style>
