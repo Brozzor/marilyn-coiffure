@@ -1,6 +1,6 @@
 <template>
   <!-- breadcrumb -->
-  <nav class="text-sm font-semibold mb-6" aria-label="Breadcrumb">
+  <nav class="text-sm font-semibold mt-4 mb-6" aria-label="Breadcrumb">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center text-blue-500">
         <a href="#" class="text-gray-700">Admin</a>
