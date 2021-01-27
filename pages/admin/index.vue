@@ -86,7 +86,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   head() {
@@ -150,8 +150,8 @@ export default {
 .bg-brown-600 {
   background-color: #917758;
 }
-.bg-brown-700 {
-  background-color: #887054;
-}
 
+.text-brown-600 {
+  color: #917758;
+}
 </style>

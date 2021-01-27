@@ -9,9 +9,7 @@ import FooterAdmin from '~/components/admin/FooterAdmin.vue'
 export default {
   components: { Sidenav, FooterAdmin },
   layout: 'admin',
-  computed: {
-    ...mapState(['sideBarOpen']),
-  },
+
 }
 </script>
 
