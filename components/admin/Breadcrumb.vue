@@ -15,7 +15,7 @@
         </svg>
       </li>
       <li class="flex items-center">
-         <NuxtLink > Dashboard </NuxtLink>
+        <NuxtLink> {{ this.$route.params.name }}</NuxtLink>
         <a href="#" class="text-gray-600"></a>
       </li>
     </ol>
