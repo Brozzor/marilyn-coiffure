@@ -7,7 +7,7 @@
     <v-calendar
       class="custom-calendar max-w-full"
       :masks="masks"
-      :attributes="attributes"
+      :attributes="formatDataCal"
       disable-page-swipe
       is-expanded
     >
@@ -31,43 +31,66 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   layout: 'admin',
   data() {
     const month = new Date().getMonth()
     const year = new Date().getFullYear()
     return {
+      booking: [],
       masks: {
         weekdays: 'WWW',
       },
-      attributes: [
-        {
-          key: 1,
-          customData: {
-            title: 'Lunch with mom.',
-            class: 'bg-red-600 text-white',
-          },
-          dates: new Date(year, month, 1),
-        },
-      ],
     }
   },
   mounted() {
     this.getInfos()
   },
+  computed: {
+    formatDataCal() {
+      let attributes = []
+      this.booking.forEach((element) => {
+        attributes.push({
+          key: element._id,
+          customData: {
+            title: element.name,
+            class: this.renderStatus(element.status),
+          },
+          dates: new Date(
+            /*  this.timeToDate(element.dateReservation).split('/')[0],
+            this.timeToDate(element.dateReservation).split('/')[1],
+            this.timeToDate(element.dateReservation).split('/')[2] */
+            new Date(element.dateReservation * 1000)
+          ),
+        })
+        console.log(`année ${new Date(
+          element.dateReservation * 1000
+        ).getYear()},
+            mois ${new Date(element.dateReservation * 1000).getMonth()},
+            jour${new Date(element.dateReservation * 1000).getDay()}`)
+      })
+      return attributes
+    },
+  },
   methods: {
-    ...mapActions({ getRes: 'admin/reservation/' }),
+    ...mapActions({ getRes: 'admin/reservation' }),
     async getInfos() {
       const ret = await this.getRes()
       console.log(ret)
-      return ret
+      this.booking = ret
+      return true
     },
-
-    formatDataCal(data) {
-      let transformData = []
-      ret.forEach((element) => {
-        element
-      })
+    renderStatus(status) {
+      if (status == 'cancel') {
+        return 'bg-red-600 text-white'
+      }
+      return status == 'unpaid'
+        ? 'bg-yellow-400 text-white'
+        : 'bg-blue-400 text-white'
+    },
+    timeToDate(timestamp) {
+      return new Date(timestamp * 1000).toLocaleDateString()
     },
   },
 }
