@@ -18,7 +18,7 @@ export const mutations = {
 export const actions = {
     async register({ commit }, form) {
         try {
-            const response = await this.axios.post(
+            const response = await this.$axios.post(
                 '/register',
                 form
             ).catch(err => {

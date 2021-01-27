@@ -49,17 +49,15 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/proxy'
   ],
-  /*  proxy: {
-     '/api/': { target: 'http://localhost:3000' }
+  proxy: {
+    // '/api/': { target: 'https://marilyn-coiffure-back.herokuapp.com', pathRewrite: {'^/api/': ''}, changeOrigin: true }
  
-   }, */
+   }, 
 
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseURL: 'https://marilyn-coiffure-back.herokuapp.com/',
-    proxyHeaders: false,
-    credentials: false
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
