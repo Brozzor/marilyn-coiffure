@@ -33,7 +33,6 @@
               for="type"
             >
               <div class="inline-block">Password</div>
-
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
@@ -142,6 +141,12 @@ export default {
         console.log('invalid form')
       }
     },
+  },
+  middleware({ store, redirect }) {
+    // If the user is authenticated
+    if (store.state.user.authDisplay) {
+      return redirect('/admin/dashboard')
+    }
   },
 }
 </script>

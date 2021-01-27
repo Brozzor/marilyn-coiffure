@@ -1,7 +1,7 @@
 
 export const state = () => ({
     currentUser: {},
-
+    authDisplay: true,
 })
 
 export const mutations = {
@@ -9,7 +9,9 @@ export const mutations = {
         localStorage.tokenSession = token
 
     },
-
+    SET_AUTH_DISPLAY(state) {
+        state.authDisplay = !state.authDisplay
+    }
 
 }
 
@@ -33,7 +35,7 @@ export const actions = {
             return { error: error.message }
         }
     },
-    async signIn({ commit }, form) {
+    async signIn({ commit, state }, form) {
         try {
             const response = await this.$axios.post(
                 '/connect',
@@ -46,6 +48,7 @@ export const actions = {
             })
             const token = response.data.tokensession
             commit('SET_CURRENT_TOKEN', token)
+            commit('SET_AUTH_DISPLAY', !state.authDisplay)
             return true
         } catch (error) {
             return { error: error.message }
