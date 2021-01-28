@@ -19,12 +19,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="name"
                       >
-                        Nom
+                        Nom/prénom
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="name"
+                        v-model="reservation.name"
                       />
                     </div>
 
@@ -33,12 +33,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Description
+                        Email
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="description"
+                        v-model="reservation.mail"
                       />
                     </div>
 
@@ -47,12 +47,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Couleur
+                        Numéro de téléphone
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="color"
+                        v-model="reservation.mobile"
                       />
                     </div>
 
@@ -61,12 +61,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Genre
+                        Status
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="genre"
+                        v-model="reservation.status"
                       />
                     </div>
 
@@ -75,12 +75,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Marque
+                        Moyen de paiement utiliser
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="brand"
+                        v-model="reservation.paymentType"
                       />
                     </div>
 
@@ -89,12 +89,12 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Prix
+                        Date de réservation
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full"
                         type="text"
-                        name="price"
+                        v-model="reservation.dateReservation"
                       />
                     </div>
 
@@ -103,12 +103,41 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Date de création
+                        Heure de réservation
+                      </label>
+                      <input
+                        class="form-input rounded-md shadow-sm mt-1 block w-full opacity-50"
+                        type="text"
+                        v-model="reservation.hours"
+                      />
+                    </div>
+
+                     <div class="col-span-8">
+                      <label
+                        class="block font-medium text-sm text-gray-700"
+                        for="text"
+                      >
+                        Montant payer par le client
+                      </label>
+                      <input
+                        class="form-input rounded-md shadow-sm mt-1 block w-full"
+                        type="text"
+                        v-model="reservation.amount"
+                      />
+                    </div>
+
+                    <div class="col-span-8">
+                      <label
+                        class="block font-medium text-sm text-gray-700"
+                        for="text"
+                      >
+                        Commentaire du client
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full opacity-50"
                         type="text"
                         disabled="disabled"
+                        v-model="reservation.comment"
                       />
                     </div>
 
@@ -117,26 +146,13 @@
                         class="block font-medium text-sm text-gray-700"
                         for="text"
                       >
-                        Dernière mise à jour
+                        Adresse IP
                       </label>
                       <input
                         class="form-input rounded-md shadow-sm mt-1 block w-full opacity-50"
                         type="text"
                         disabled="disabled"
-                      />
-                    </div>
-
-                    <div class="col-span-8">
-                      <label
-                        class="block font-medium text-sm text-gray-700"
-                        for="text"
-                      >
-                        Lien de l'image
-                      </label>
-                      <input
-                        class="form-input rounded-md shadow-sm mt-1 block w-full"
-                        type="text"
-                        name="imgLink"
+                        v-model="reservation.ip"
                       />
                     </div>
                   </div>
@@ -150,13 +166,13 @@
                     href="/admin/articles"
                     class="inline-flex items-center mr-1 px-4 py-2 bg-gray-400 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-500 focus:outline-none focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
                   >
-                    Cancel
+                    Annuler
                   </a>
                   <button
                     type="submit"
-                    class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
+                    class="inline-flex items-center px-4 py-2 bg-brown-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
                   >
-                    Save
+                    Enregistrer
                   </button>
                 </div>
               </div>
