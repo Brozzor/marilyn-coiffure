@@ -4,12 +4,12 @@ export const mutations = {}
 
 export const actions = {
   async dashboard({ commit }) {
-
     try {
-      const response = await this.$axios.$get('/admin/dashboard', {
+      const response = await this.$axios
+        .$get('/admin/dashboard', {
           headers: {
             tokenSession: localStorage.tokenSession,
-          }
+          },
         })
         .catch((err) => {
           if (err.response.status === 400) {
@@ -24,12 +24,12 @@ export const actions = {
     }
   },
   async reservation({ commit }) {
-
     try {
-      const response = await this.$axios.$get('/admin/reservation', {
+      const response = await this.$axios
+        .$get('/admin/reservation', {
           headers: {
             tokenSession: localStorage.tokenSession,
-          }
+          },
         })
         .catch((err) => {
           if (err.response.status === 400) {
@@ -44,12 +44,12 @@ export const actions = {
     }
   },
   async reservationById({ commit }, id) {
-
     try {
-      const response = await this.$axios.$get('/admin/reservation/' + id, {
+      const response = await this.$axios
+        .$get('/admin/reservation/' + id, {
           headers: {
             tokenSession: localStorage.tokenSession,
-          }
+          },
         })
         .catch((err) => {
           if (err.response.status === 400) {
@@ -65,19 +65,22 @@ export const actions = {
   },
   async editReservation({ commit }, form) {
     try {
-        const response = await this.$axios.$post(
-            '/admin/reservation/edit',
-            form
-        ).catch(err => {
-            if (err.response.status === 400) {
-                throw new Error(err.response.data.error)
-            }
-            
-            throw err
+      const response = await this.$axios
+        .$post('/admin/reservation/edit', form, {
+          headers: {
+            tokenSession: localStorage.tokenSession,
+          },
         })
-        return true
+        .catch((err) => {
+          if (err.response.status === 400) {
+            throw new Error(err.response.data.error)
+          }
+
+          throw err
+        })
+      return true
     } catch (error) {
-        return { error: error.message }
+      return { error: error.message }
     }
-},
+  },
 }
