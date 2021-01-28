@@ -87,7 +87,7 @@ export default {
       }
       return status == 'unpaid'
         ? 'bg-yellow-400 text-white'
-        : 'bg-blue-400 text-white'
+        : 'bg-green-400 text-white'
     },
     timeToDate(timestamp) {
       return new Date(timestamp * 1000).toLocaleDateString()
