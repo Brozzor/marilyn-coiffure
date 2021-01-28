@@ -10,7 +10,7 @@
       <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
         <div>
           <div class="mt-5 md:mt-0 md:col-span-2">
-            <form action="" method="POST">
+            <div>
               <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
                   <div class="grid grid-cols-6 gap-6">
@@ -177,7 +177,7 @@
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -199,14 +199,15 @@ export default {
     this.getInfos()
   },
   methods: {
-    ...mapActions({ getRes: 'admin/reservationById', editInfos: 'admin/editReservation'}),
+    ...mapActions({ getRes: 'admin/reservationById', editInfo: 'admin/editReservation'}),
     async getInfos() {
       const ret = await this.getRes(this.$route.query.id)
       this.reservation = ret
       return false
     },
     async editInfos() {
-      await this.editInfos(this.reservation)
+      console.log('toto')
+      await this.editInfo(this.reservation)
       //this.$router.push({ path: '/admin/reservation'})
       return false
     },
