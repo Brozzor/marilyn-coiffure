@@ -63,4 +63,21 @@ export const actions = {
       return { error: error.message }
     }
   },
+  async editReservation({ commit }, form) {
+    try {
+        const response = await this.$axios.$post(
+            '/reservation/edit',
+            form
+        ).catch(err => {
+            if (err.response.status === 400) {
+                throw new Error(err.response.data.error)
+            }
+            
+            throw err
+        })
+        return true
+    } catch (error) {
+        return { error: error.message }
+    }
+},
 }
