@@ -22,8 +22,9 @@
                         Nom/prénom
                       </label>
                       <input
-                        class="form-input rounded-md shadow-sm mt-1 block w-full"
+                        class="form-input rounded-md shadow-sm mt-1 block w-full opacity-50"
                         type="text"
+                        disabled="diabled"
                         v-model="reservation.name"
                       />
                     </div>
@@ -206,7 +207,7 @@ export default {
       return false
     },
     async editInfos() {
-      console.log('toto')
+
       await this.editInfo(this.reservation)
       //this.$router.push({ path: '/admin/reservation'})
       return false
