@@ -14,15 +14,15 @@
                 <h5>Horaires</h5>
               </div>
               <div class="days-text">
-                <span class="day">Lundi - Vendredi</span>
-                <span class="time">08.00 H - 17.00 H</span>
+                <span class="day">Mardi - Jeudi - Vendredi</span>
+                <span class="time">09.00 H - 19.00 H</span>
               </div>
               <div class="days-text saturday-text">
                 <span class="day">Samedi</span>
-                <span class="time">09.00 H - 16.00 H</span>
+                <span class="time">09.00 H - 15.00 H</span>
               </div>
               <div class="days-text sunday-text">
-                <span class="day">Dimanche</span>
+                <span class="day">Lundi - Dimanche</span>
                 <span class="time">Fermer</span>
               </div>
               <div class="location-text">

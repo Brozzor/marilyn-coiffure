@@ -5,7 +5,7 @@
       <div v-if="errorForm" class="alert-error">
         <p>{{ errorForm }}</p>
       </div>
-      
+
       <div class="appointment-header">
         <div class="appointment-cell" @click="nbStep = 1">
           <div class="appointment-inner" :class="{ current: nbStep == 1 }">
@@ -50,15 +50,15 @@
             <label>Numéro de téléphone</label>
             <input type="text" name="mobile" v-model="form.mobile" />
           </div>
-          <div class="form-field" style="width: 65%">
+          <div class="form-field form-field-address" style="width: 45%">
             <label>Rue</label>
             <input type="text" v-model="form.street" />
           </div>
-          <div class="form-field" style="width: 25%">
+          <div class="form-field form-field-address" style="width: 35%">
             <label>Ville</label>
             <input type="text" v-model="form.city" />
           </div>
-          <div class="form-field" style="width: 10%">
+          <div class="form-field form-field-address" style="width: 20%">
             <label>Code postal</label>
             <input type="text" v-model="form.zip" />
           </div>
@@ -156,8 +156,10 @@
         :class="{ current: nbStep == 4 }"
       >
         <p>Bravo</p>
-        <p>Votre demande a été envoyer avec succès nous allons vous recontacter au plus vite</p>
-        
+        <p>
+          Votre demande a été envoyer avec succès nous allons vous recontacter
+          au plus vite
+        </p>
       </div>
     </div>
   </section>
@@ -172,7 +174,7 @@ export default {
   name: 'Appointment',
   components: {
     Datepicker,
-    mapActions
+    mapActions,
   },
   data() {
     return {
@@ -190,27 +192,35 @@ export default {
         zip: '',
         comment: '',
         reservation: new Date(),
-        timetables: ''
+        timetables: '',
       },
-      errorForm: ""
+      errorForm: '',
     }
   },
   methods: {
     ...mapActions({ reqReservation: 'booking/booking' }),
     async sendReservation() {
-      let temp = this.form.reservation;
-      this.form.reservation = parseInt(this.form.reservation.getTime() / 1000);
-      this.form.mobile = parseInt(this.form.mobile);
+      let temp = this.form.reservation
+      this.form.reservation = parseInt(this.form.reservation.getTime() / 1000)
+      this.form.mobile = parseInt(this.form.mobile)
       const ret = await this.reqReservation(this.form)
-      this.form.reservation = temp;
+      this.form.reservation = temp
       if (ret.error) {
         this.errorForm = ret.error
       } else {
-        this.nbStep = 4;
-        this.errorForm = ""
+        this.nbStep = 4
+        this.errorForm = ''
       }
       return false
     },
   },
 }
 </script>
+
+<style>
+@media handheld, only screen and (max-width: 767px) {
+  .form-field-address {
+    width: 100% !important;
+  }
+}
+</style>

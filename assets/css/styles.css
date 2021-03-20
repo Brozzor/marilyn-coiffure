@@ -1192,6 +1192,7 @@ pricing
 }
 
 .our-price-box-right {
+	margin-top: 6%;
 	display: table-cell;
 	vertical-align: top;
 	width: 28%;

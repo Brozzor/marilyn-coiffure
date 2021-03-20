@@ -27,12 +27,12 @@
       <div class="row">
         <!--new header-->
         <div class="header">
-          <div class="mobile-ic">
+          <div class="mobile-ic" @click="isActive = !isActive">
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div class="responsive-menu">
+          <div class="responsive-menu" :class="{'display-menu': isActive}">
             <ul>
               <li class="active"><a href="#home" title="Home">Accueil</a></li>
               <li><a href="#about" title="Aboutus">A propos</a></li>
@@ -84,8 +84,16 @@
 <script>
 export default {
   name: 'Hero',
+  data(){
+    return {
+      isActive: false
+    }
+  }
 }
 </script>
 
 <style>
+.display-menu {
+  display: block;
+}
 </style>
