@@ -15,7 +15,7 @@
           <li><a href="/legal">Mentions Légales</a></li>
         </ul>
       </div>
-      <div class="subscribe-us clearfix">
+      <div class="footer-made clearfix">
 
         <p class="copyright">
           &copy; 2021 Fabriquer avec ❤️ par

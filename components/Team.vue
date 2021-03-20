@@ -4,7 +4,7 @@
     <div class="row">
       <h2 class="heading-title">Notre Equipe</h2>
       <div class="our-team-wrapper clearfix">
-        <div class="our-team-box">
+        <div class="our-team-box" style="width: 345px;">
           <div class="our-team-inner">
             <div class="our-team-img">
               <img src="img/team/marilyn.jpg" alt="" />

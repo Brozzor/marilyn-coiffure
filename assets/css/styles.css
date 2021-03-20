@@ -255,12 +255,6 @@ banner section
 
 -----------------------------------------------------------------------------------*/
 
-.banner-section {
-    background: url("../images/banner-01.jpg") no-repeat top center;
-    height: 100vh;
-    background-size: cover;
-}
-
 .header {
     display: table;
     table-layout: fixed;
@@ -1723,11 +1717,7 @@ Footer
 	display: none;
 }
 
-.subscribe-us {
-	padding-top: 81px;
-}
-
-.subscribe-us h5 {
+.footer-made h5 {
 	position: relative;
 	font-size: 15px;
 	line-height: 18px;
@@ -1736,7 +1726,7 @@ Footer
 	padding-bottom: 13px;
 }
 
-.subscribe-us h5:after {
+.footer-made h5:after {
 	content: "";
 	background: url("../images/sub-ic.png") no-repeat center center;
 	width: 51px;
@@ -1748,7 +1738,7 @@ Footer
 	bottom: -13px;
 }
 
-.subscribe-us p {
+.footer-made p {
 	font-size: 12px;
 	line-height: 16px;
 	color: #a9aeb4;
@@ -1830,7 +1820,7 @@ Footer
 	background: #917758;
 }
 
-.subscribe-us .copyright {
+.footer-made .copyright {
 	margin-top: 63px;
 	margin-bottom: 0;
 }
@@ -2361,7 +2351,7 @@ h2 {
 	width: 100%;
 }
 
-.subscribe-us {
+.footer-made {
   padding-top: 57px;
 }
 .service-block-image-wrap {
