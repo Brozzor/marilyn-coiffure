@@ -48,6 +48,14 @@ export default {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              "arrows": false
+            },
+          },
+        ],
 
       },
     }

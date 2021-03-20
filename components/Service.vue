@@ -22,9 +22,7 @@
                     nous réaliserons la coupe<br />
                     de vos rêves
                   </p>
-                  <a href="#"  class="read-more-btn"
-                    >tarifs</a
-                  >
+                  <a href="#" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
@@ -37,7 +35,12 @@
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="img/service/cake.svg" style="color: #917758;" width="87px" alt="" />
+                    <img
+                      src="img/service/cake.svg"
+                      style="color: #917758"
+                      width="87px"
+                      alt=""
+                    />
                   </div>
                   <h6>Événement important</h6>
                   <p>
@@ -46,9 +49,7 @@
                     rester beau en toute circonstances<br />
                     <br />
                   </p>
-                  <a href="#pricing"  class="read-more-btn"
-                    >tarifs</a
-                  >
+                  <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
@@ -70,9 +71,7 @@
                     Profiter d'une grande expérience<br />
                     pour le taillage de celle-ci
                   </p>
-                  <a href="#pricing" class="read-more-btn"
-                    >tarifs</a
-                  >
+                  <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
@@ -95,9 +94,7 @@
                     nous réaliserons la coupe<br />
                     de vos rêves
                   </p>
-                  <a href="#pricing"  class="read-more-btn"
-                    >Tarifs</a
-                  >
+                  <a href="#pricing" class="read-more-btn">Tarifs</a>
                 </div>
               </div>
             </div>
@@ -119,9 +116,7 @@
                     Profiter d'une grande expérience<br />
                     pour le taillage de celle-ci
                   </p>
-                  <a href="#pricing" class="read-more-btn"
-                    >tarifs</a
-                  >
+                  <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
@@ -143,22 +138,16 @@
                     belle tout au long de votre soirée<br />
                     <br />
                   </p>
-                  <a href="#"  class="read-more-btn"
-                    >tarifs</a
-                  >
+                  <a href="#" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
           </div>
           <template #prevArrow="" hidden>
-            <div class="custom-arrow">
-
-            </div>
+            <div class="custom-arrow"></div>
           </template>
           <template #nextArrow="" hidden>
-            <div class="">
-
-            </div>
+            <div class=""></div>
           </template>
         </VueSlickCarousel>
       </div>
@@ -183,6 +172,33 @@ export default {
         slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              "arrows": false
+            },
+          },
+        ],
       },
     }
   },
