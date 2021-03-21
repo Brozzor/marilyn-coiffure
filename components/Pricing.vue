@@ -110,14 +110,30 @@ export default {
       pricingWomen: [
         {
           id: 1,
-          price: 35,
+          price: 22,
+          title: 'Forfait coupe',
+          comment: "sans shampooing",
+          img: 'images/price-ic1.png',
+          altImg: 'ciseaux Marilyn Coiffure',
+        },
+        {
+          id: 2,
+          price: 20,
+          title: 'Shampoing brush',
+          comment: "Shamooing, soin et brush inclus",
+          img: 'images/price-ic1.png',
+          altImg: 'ciseaux Marilyn Coiffure',
+        },
+        {
+          id: 3,
+          price: 30,
           title: 'Forfait coupe',
           comment: "shampooing, conditionneur, brush inclus",
           img: 'images/price-ic1.png',
           altImg: 'ciseaux Marilyn Coiffure',
         },
         {
-          id: 2,
+          id: 4,
           price: 60,
           title: 'Forfait coupe couleur',
           comment: "shampooing, soin, brush inclus",
@@ -125,7 +141,7 @@ export default {
           altImg: 'produits Marilyn Coiffure',
         },
         {
-          id: 3,
+          id: 5,
           price: 65,
           title: 'Forfait coupe mèches',
           comment: "shampooing, soin, brush inclus",
@@ -133,8 +149,8 @@ export default {
           altImg: 'produits Marilyn Coiffure',
         },
         {
-          id: 4,
-          price: 30,
+          id: 6,
+          price: 52,
           title: 'Forfait couleur brush',
           comment: "shampooing, soin, soin inclus",
           img: 'images/price-ic4.png',
