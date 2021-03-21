@@ -2,7 +2,7 @@
   <!--Service section -->
   <section id="services" class="container our-service">
     <div class="row">
-      <h2 class="heading-title">Nos services</h2>
+      <h2 class="heading-title">Mes services</h2>
       <div class="service-wrapper clearfix">
         <VueSlickCarousel v-bind="carousel">
           <div class="service-block service-middle">
