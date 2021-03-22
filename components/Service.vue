@@ -22,7 +22,7 @@
                     nous réaliserons la coupe<br />
                     de vos rêves
                   </p>
-                  <a href="#" class="read-more-btn">tarifs</a>
+                  <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@
                     belle tout au long de votre soirée<br />
                     <br />
                   </p>
-                  <a href="#" class="read-more-btn">tarifs</a>
+                  <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
               </div>
             </div>

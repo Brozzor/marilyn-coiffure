@@ -186,7 +186,7 @@ export default {
           altImg: 'ciseaux Marilyn Coiffure',
         },
         {
-          id: 1,
+          id: 2,
           price: 10,
           title: 'Forfait coupe 6-12 ans',
           comment: "sans shampooing",

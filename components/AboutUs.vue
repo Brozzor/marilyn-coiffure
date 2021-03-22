@@ -14,7 +14,7 @@
                 <h5>Horaires</h5>
               </div>
               <div class="days-text">
-                <span class="day">Mardi - Jeudi - Vendredi</span>
+                <span class="day">Mardi - Vendredi</span>
                 <span class="time">09.00 H - 19.00 H</span>
               </div>
               <div class="days-text saturday-text">
@@ -39,19 +39,19 @@
       </div>
       <div class="experience-right">
         <h6>Une histoire unique</h6>
-        <h2>37 ans d'expériences</h2>
+        <h2>36 ans d'expériences</h2>
         <span class="line"></span>
         <div class="story-text">
           <div class="story-text-left">
             <p class="big-text">
               Marilyn Buisson vous accompagne dans<br />
               chacune de vos demandes capillaire<br />
-              depuis maintenant 37 ans
+              depuis maintenant 36 ans
             </p>
             <p>
               Marilyn Buisson à passer une grande partie de sa vie à couper des cheveux, pour elle ce n'est pas un métier c'est sa passion.<br>Profiter d'une riche expériences accumulé depuis dès années chez vous dans votre salon , l'essayer c'est l'adopter ;)
             </p>
-            <a href="#" class="read-more-btn">Prenez un rendez vous</a>
+            <a href="/#appointment" class="read-more-btn">Prenez un rendez vous</a>
           </div>
           <div class="story-text-right">
             <img src="images/shave-brush.jpg" alt="" />

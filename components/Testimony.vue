@@ -8,13 +8,14 @@
         <div class="testimonial-main">
           <div class="testimonial-box">
             <p>
-              Mon conjoint y va depuis plusieurs années et mon fils depuis tout petit on est jamais déçu et Marilyn est très aimable et gentille je recommande les yeux fermés
+              Coiffeuse sympa et pro,  coiffure à domicile très pratique. Pour moi c'est la solution idéale!
             </p>
-            <span><b>Marco polo</b></span>
+            <span><b>L Bernard</b></span>
           </div>
+         <!--
           <div class="test-img">
             <img src="images/testi-img.png" alt="" />
-          </div>
+          </div>-->
         </div>
         <div class="testimonial-main">
           <div class="testimonial-box">
@@ -22,11 +23,12 @@
               J'y ai été pour la première fois aujourd'hui :  coiffeuse très sympas, minutieux, coupe propre, dégradé impeccable ! Coupe qui répond parfaitement à la demande du client et ce, pour un prix minime !
 Je recommande totalement ! 👍
             </p>
-            <span><b>Didier raoult</b></span>
+            <span><b>Sandrine Duvigneaux</b></span>
           </div>
+          <!--
           <div class="test-img">
             <img src="images/testi-img.png" alt="" />
-          </div>
+          </div>-->
         </div>
         </VueSlickCarousel>
       </div>
