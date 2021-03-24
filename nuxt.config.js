@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Coiffeuse à domicile Poitiers (86) et ces alentours. Votre coiffeuse professionnelle et expérimentée se déplace à domicile pour réaliser votre coiffure idéale.' }
+      { hid: 'description', name: 'description', content: 'Coiffeuse à domicile sur Poitiers (86) et ces alentours. Votre coiffeuse professionnelle et expérimentée se déplace à domicile pour réaliser votre coiffure idéale.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

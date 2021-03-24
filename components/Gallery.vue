@@ -1,266 +1,56 @@
 <template>
-    <section id="gallery" class="container our-gallery">
-      <div class="g2-ic">
-        <img src="images/g2.png" alt="" />
+  <section id="gallery" class="container our-gallery">
+    <div class="g2-ic">
+      <img src="images/g2.png" alt="" />
+    </div>
+    <div class="g3-ic">
+      <img src="images/g3.png" alt="" />
+    </div>
+    <div class="row">
+      <h2 class="heading-title">Ma Gallerie</h2>
+      <div class="g1-ic">
+        <img src="images/g1.png" alt="" />
       </div>
-      <div class="g3-ic">
-        <img src="images/g3.png" alt="" />
-      </div>
-      <div class="row">
-        <h2 class="heading-title">Notre Gallerie</h2>
-        <div class="g1-ic">
-          <img src="images/g1.png" alt="" />
-        </div>
-        <div id="tab-1" class="tab-content current">
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img1.png"
-                title=""
-                ><img src="images/gallery-img1.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img4.png"
-                title=""
-                ><img src="images/gallery-img4.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img5.png"
-                title=""
-                ><img src="images/gallery-img5.png" alt=""
-              /></a>
-            </div>
+      <div id="tab-1" class="tab-content current">
+        <div class="tab-col">
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/1.jpg" title=""
+              ><img src="img/gallery/1.jpg" alt=""
+            /></a>
           </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img2.png"
-                title=""
-                ><img src="images/gallery-img2.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img6.png"
-                title=""
-                ><img src="images/gallery-img6.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img3.png"
-                title=""
-                ><img src="images/gallery-img3.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img7.png"
-                title=""
-                ><img src="images/gallery-img7.png" alt=""
-              /></a>
-            </div>
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/2.jpg" title=""
+              ><img src="img/gallery/2.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div id="tab-2" class="tab-content">
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img4.png"
-                title=""
-                ><img src="images/gallery-img4.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img5.png"
-                title=""
-                ><img src="images/gallery-img5.png" alt=""
-              /></a>
-            </div>
+        <div class="tab-col">
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/4.jpg" title=""
+              ><img src="img/gallery/4.jpg" alt=""
+            /></a>
           </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img2.png"
-                title=""
-                ><img src="images/gallery-img2.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img6.png"
-                title=""
-                ><img src="images/gallery-img6.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img3.png"
-                title=""
-                ><img src="images/gallery-img3.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img1.png"
-                title=""
-                ><img src="images/gallery-img1.png" alt=""
-              /></a>
-            </div>
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/5.jpg" title=""
+              ><img src="img/gallery/5.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div id="tab-3" class="tab-content">
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img2.png"
-                title=""
-                ><img src="images/gallery-img2.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img6.png"
-                title=""
-                ><img src="images/gallery-img6.png" alt=""
-              /></a>
-            </div>
+        <div class="tab-col">
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/6.jpg" title=""
+              ><img src="img/gallery/6.jpg" alt=""
+            /></a>
           </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img3.png"
-                title=""
-                ><img src="images/gallery-img3.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img4.png"
-                title=""
-                ><img src="images/gallery-img4.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img5.png"
-                title=""
-                ><img src="images/gallery-img5.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img6.png"
-                title=""
-                ><img src="images/gallery-img6.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div id="tab-4" class="tab-content">
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img1.png"
-                title=""
-                ><img src="images/gallery-img1.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img6.png"
-                title=""
-                ><img src="images/gallery-img6.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img3.png"
-                title=""
-                ><img src="images/gallery-img3.png" alt=""
-              /></a>
-            </div>
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img4.png"
-                title=""
-                ><img src="images/gallery-img4.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="tab-col">
-            <div class="gallery-img">
-              <a
-                class="fancybox"
-                data-fancybox-group="gallery1"
-                href="images/gallery-img1.png"
-                title=""
-                ><img src="images/gallery-img1.png" alt=""
-              /></a>
-            </div>
+          <div class="gallery-img">
+            <a class="fancybox" href="img/gallery/7.jpg" title=""
+              ><img src="img/gallery/7.jpg" alt=""
+            /></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script>
