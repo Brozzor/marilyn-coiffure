@@ -42,11 +42,11 @@
                       alt=""
                     />
                   </div>
-                  <h6>Événement important</h6>
+                  <h6>Événements importants</h6>
                   <p>
                     Marilyn s'occupera<br />
                     de tous vos événements importants<br />
-                    rester beau en toute circonstances<br />
+                    restez beau en toutes circonstances<br />
                     <br />
                   </p>
                   <a href="#pricing" class="read-more-btn">tarifs</a>
@@ -68,7 +68,7 @@
                   <p>
                     Besoin d'un entretien<br />
                     pour votre barbe ? <br />
-                    Profiter d'une grande expérience<br />
+                    Profitez d'une grande expérience<br />
                     pour le taillage de celle-ci
                   </p>
                   <a href="#pricing" class="read-more-btn">tarifs</a>
@@ -113,7 +113,7 @@
                   <p>
                     Besoin d'un entretien<br />
                     pour votre barbe ? <br />
-                    Profiter d'une grande expérience<br />
+                    Profitez d'une grande expérience<br />
                     pour le taillage de celle-ci
                   </p>
                   <a href="#pricing" class="read-more-btn">tarifs</a>
@@ -133,8 +133,8 @@
                   </div>
                   <h6>Brushing</h6>
                   <p>
-                    Profiter d'un brushing<br />
-                    parfait et sentez-vous <br />
+                    Profitez d'un brushing<br />
+                    parfait et sentez vous <br />
                     belle tout au long de votre soirée<br />
                     <br />
                   </p>

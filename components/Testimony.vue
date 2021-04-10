@@ -2,7 +2,7 @@
   <!--Testimonial section -->
   <section id="testimonial" class="container client-testimonial">
     <div class="row">
-      <h2 class="heading-title">+4000 clients satisfait</h2>
+      <h2 class="heading-title">+4000 clients satisfaits</h2>
       <div >
         <VueSlickCarousel class="testimonial-wrapper" v-bind="carousel" >
         <div class="testimonial-main">

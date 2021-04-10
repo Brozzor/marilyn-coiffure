@@ -15,7 +15,7 @@
         <div class="join-member-left">
           <h3>
             Vous voulez devenir client ?<br />
-            Prenez rendez vous
+            Prenez rendez-vous
           </h3>
         </div>
         <div class="join-member-right">
@@ -23,7 +23,7 @@
             href="#appointment"
             title="Make an appointment"
             class="read-more-btn"
-            >Prendre un rendez vous</a
+            >Prendre un rendez-vous</a
           >
         </div>
       </div>

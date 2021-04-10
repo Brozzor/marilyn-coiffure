@@ -29,7 +29,7 @@
               </div>
               <div class="counter-text">
                 <h5 class="count">+4000</h5>
-                <p>Clients satisfait</p>
+                <p>Clients satisfaits</p>
               </div>
             </div>
             <div class="counter-box">

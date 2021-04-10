@@ -1,7 +1,7 @@
 <template>
   <section id="appointment" class="container make-appointment">
     <div class="row">
-      <h2 class="heading-title">Prendre un rendez vous</h2>
+      <h2 class="heading-title">Prendre un rendez-vous</h2>
       <div v-if="errorForm" class="alert-error">
         <p>{{ errorForm }}</p>
       </div>
@@ -103,7 +103,7 @@
         class="appointment-form tab-content2 clearfix"
         :class="{ current: nbStep == 3 }"
       >
-        <p>03: Choisir une préférences de rendez vous</p>
+        <p>03: Choisir une préférence de rendez-vous</p>
         <div class="appointment-form-wrapper clearfix">
           <div>
             <div class="form-field" style="float: inherit">
@@ -130,7 +130,7 @@
 
           <em class="info-date">
             Après avoir confirmer votre demande vous serez recontactez dans
-            moins de 24h (jours ouvrés) pour convenir de l'horaire du rendez
+            moins de 24h (jours ouvrés) pour convenir de l'horaire du rendez-
             vous
           </em>
           <div class="form-field submit-field">
@@ -157,7 +157,7 @@
       >
         <p>Bravo</p>
         <p>
-          Votre demande a été envoyer avec succès nous allons vous recontacter
+          Votre demande a été envoyée avec succès nous allons vous recontacter
           au plus vite
         </p>
       </div>

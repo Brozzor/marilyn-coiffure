@@ -2,7 +2,7 @@
   <!-- Our Team section -->
   <section id="our-team" class="container our-team">
     <div class="row">
-      <h2 class="heading-title">L'Equipe</h2>
+      <h2 class="heading-title">Notre coiffeuse</h2>
       <div class="our-team-wrapper clearfix">
         <div class="our-team-box" style="width: 345px;">
           <div class="our-team-inner">

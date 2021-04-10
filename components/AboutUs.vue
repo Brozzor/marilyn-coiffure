@@ -45,13 +45,13 @@
           <div class="story-text-left">
             <p class="big-text">
               Marilyn Buisson vous accompagne dans<br />
-              chacune de vos demandes capillaire<br />
+              chacune de vos demandes capillaires<br />
               depuis maintenant 36 ans
             </p>
             <p>
-              Marilyn Buisson à passer une grande partie de sa vie à couper des cheveux, pour elle ce n'est pas un métier c'est sa passion.<br>Profiter d'une riche expériences accumulé depuis dès années chez vous dans votre salon , l'essayer c'est l'adopter ;)
+              Marilyn Buisson a passé une grande partie de sa vie à couper des cheveux, pour elle ce n'est pas un métier c'est sa passion.<br>Profitez d'une riche expérience accumulée depuis des années chez vous dans votre salon , l'essayer c'est l'adopter ;)
             </p>
-            <a href="/#appointment" class="read-more-btn">Prenez un rendez vous</a>
+            <a href="/#appointment" class="read-more-btn">Prenez un rendez-vous</a>
           </div>
           <div class="story-text-right">
             <img src="images/shave-brush.jpg" alt="" />
