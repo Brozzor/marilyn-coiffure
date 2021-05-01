@@ -50,12 +50,7 @@ export default {
 
 <style>
 .container-legal{
-  width: 100rem!important;
-
- 
   display: flex;
- 
-  
   margin-left: auto;
   margin-right: auto;
 }
