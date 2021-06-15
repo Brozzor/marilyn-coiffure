@@ -12,7 +12,7 @@
             <div class="banner-text">
               <span>Coiffeuse/Barbière à domicile</span>
               <h1>Marilyn Coiffure</h1>
-              <p>Prenez rendez vous avec Marilyn en seulement deux clics, profiter d'une experience de salon chez vous</p>
+              <p>Prenez rendez vous avec Marilyn en seulement deux clics, profitez d'une experience de salon chez vous</p>
               <span class="much-img"
                 ><img src="images/much-img.png" alt=""
               /></span>

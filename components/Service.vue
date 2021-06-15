@@ -64,12 +64,12 @@
                   <div class="service-ic">
                     <img src="images/razoe-shaver.png" alt="" />
                   </div>
-                  <h6>Taillage de barbe</h6>
+                  <h6>Taille de barbe</h6>
                   <p>
                     Besoin d'un entretien<br />
                     pour votre barbe ? <br />
                     Profitez d'une grande expérience<br />
-                    pour le taillage de celle-ci
+                    pour l'entretien de celle-ci
                   </p>
                   <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>
@@ -109,12 +109,12 @@
                   <div class="service-ic">
                     <img src="images/clipper-cut.png" alt="" />
                   </div>
-                  <h6>Taillage de barbe</h6>
+                  <h6>Taille de barbe</h6>
                   <p>
                     Besoin d'un entretien<br />
                     pour votre barbe ? <br />
                     Profitez d'une grande expérience<br />
-                    pour le taillage de celle-ci
+                    pour l'entretion de celle-ci
                   </p>
                   <a href="#pricing" class="read-more-btn">tarifs</a>
                 </div>

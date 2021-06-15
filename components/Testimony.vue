@@ -20,8 +20,7 @@
         <div class="testimonial-main">
           <div class="testimonial-box">
             <p>
-              J'y ai été pour la première fois aujourd'hui :  coiffeuse très sympas, minutieux, coupe propre, dégradé impeccable ! Coupe qui répond parfaitement à la demande du client et ce, pour un prix minime !
-Je recommande totalement ! 👍
+              Couleur et mèches très réussies, avec effet patiné et naturel. <br>Et ce qui prouve que c'est réussi, c'est quand les proches font des compliments en voyant ma nouvelle coiffure. 👍Je recommande Marilyn pour sa bonne humeur aussi
             </p>
             <span><b>Sandrine Duvigneaux</b></span>
           </div>

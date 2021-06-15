@@ -23,11 +23,11 @@
               </div>
               <div class="days-text sunday-text">
                 <span class="day">Lundi - Dimanche</span>
-                <span class="time">Fermer</span>
+                <span class="time">Fermé</span>
               </div>
               <div class="location-text">
                 <img src="images/loc-ic.png" alt="" />
-                <span>Poitiers et ces alentours</span>
+                <span>Poitiers et ses alentours</span>
               </div>
               <div class="phone-text">
                 <img src="images/phone-ic.png" alt="" />
@@ -39,7 +39,7 @@
       </div>
       <div class="experience-right">
         <h6>Une histoire unique</h6>
-        <h2>36 ans d'expériences</h2>
+        <h2>36 ans d'expérience</h2>
         <span class="line"></span>
         <div class="story-text">
           <div class="story-text-left">
