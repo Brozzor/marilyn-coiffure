@@ -59,7 +59,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'https://marilyn-coiffure-back.herokuapp.com/',
+    baseURL: 'https://api.marilyn-coiffure.fr/',
     proxyHeaders: false,
     credentials: false
   },
