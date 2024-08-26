@@ -45,9 +45,12 @@
             <div class="our-price-box-right">
               <div class="table">
                 <div class="table-cell">
-                  <div class="start-price">
+                  <div v-if="item.price" class="start-price">
                     <span>À partir</span>
                     <b>{{ item.price }} €</b>
+                  </div>
+                  <div v-else class="start-price">
+                    <span class="quote">Sur devis</span>
                   </div>
                 </div>
               </div>
@@ -72,9 +75,12 @@
             <div class="our-price-box-right">
               <div class="table">
                 <div class="table-cell">
-                  <div class="start-price">
+                  <div v-if="item.price" class="start-price">
                     <span>À partir</span>
                     <b>{{ item.price }} €</b>
+                  </div>
+                  <div v-else>
+                    <span>Sur devis</span>
                   </div>
                 </div>
               </div>
@@ -95,7 +101,7 @@ export default {
       pricingMen: [
         {
           id: 1,
-          price: 15,
+          price: 17,
           title: 'Forfait coupe',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -103,7 +109,7 @@ export default {
         },
         {
           id: 2,
-          price: 18,
+          price: 20,
           title: 'Forfait coupe',
           comment: "shampoing, séchage inclus",
           img: 'images/price-ic1.png',
@@ -129,7 +135,7 @@ export default {
       pricingWomen: [
         {
           id: 1,
-          price: 22,
+          price: 25,
           title: 'Forfait coupe',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -137,7 +143,7 @@ export default {
         },
         {
           id: 2,
-          price: 20,
+          price: 25,
           title: 'Shampoing brush',
           comment: "Shampoing, soin et brush inclus",
           img: 'images/price-ic1.png',
@@ -145,7 +151,7 @@ export default {
         },
         {
           id: 3,
-          price: 30,
+          price: 35,
           title: 'Forfait coupe',
           comment: "shampoing, conditionneur, brush inclus",
           img: 'images/price-ic1.png',
@@ -169,9 +175,38 @@ export default {
         },
         {
           id: 6,
-          price: 52,
+          price: 55,
           title: 'Forfait couleur brush',
           comment: "shampoing, couleur et soin inclus",
+          img: 'images/price-ic4.png',
+          altImg: 'produits Marilyn Coiffure',
+        },
+        {
+          id: 6,
+          title: 'Lissage brésilien relax',
+          comment: "Maitrise des frisottis",
+          img: 'images/price-ic4.png',
+          altImg: 'produits Marilyn Coiffure',
+        },
+        {
+          id: 6,
+          title: 'Lissage brésilien smooth',
+          comment: "Réduction du volume",
+          img: 'images/price-ic4.png',
+          altImg: 'produits Marilyn Coiffure',
+        },
+        {
+          id: 6,
+          title: 'Lissage brésilien Strong',
+          comment: "Effet durable dans le temps",
+          img: 'images/price-ic4.png',
+          altImg: 'produits Marilyn Coiffure',
+        },
+        {
+          id: 6,
+          price: 35,
+          title: 'Soin détox Olaplex',
+          comment: "Soin réparateur Olaplex, massage crânien inclus",
           img: 'images/price-ic4.png',
           altImg: 'produits Marilyn Coiffure',
         },
@@ -179,7 +214,7 @@ export default {
       pricingChildren: [
         {
           id: 1,
-          price: 7,
+          price: 8,
           title: 'Forfait coupe 0-6 ans',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -198,3 +233,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.quote {
+	font-size: 12px!important;
+}
+</style>

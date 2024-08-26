@@ -15,24 +15,24 @@
         <div class="tab-col">
           <div class="gallery-img">
             <a class="fancybox" href="img/gallery/1.jpg" title=""
-              ><img src="img/gallery/1.jpg" alt=""
+              ><img src="img/gallery/girl1.jpg" alt=""
             /></a>
           </div>
           <div class="gallery-img">
             <a class="fancybox" href="img/gallery/2.jpg" title=""
-              ><img src="img/gallery/2.jpg" alt=""
+              ><img src="img/gallery/girl2.jpg" alt=""
             /></a>
           </div>
         </div>
         <div class="tab-col">
           <div class="gallery-img">
             <a class="fancybox" href="img/gallery/4.jpg" title=""
-              ><img src="img/gallery/4.jpg" alt=""
+              ><img src="img/gallery/men1.jpg" alt=""
             /></a>
           </div>
           <div class="gallery-img">
             <a class="fancybox" href="img/gallery/5.jpg" title=""
-              ><img src="img/gallery/5.jpg" alt=""
+              ><img src="img/gallery/girl3.jpg" alt=""
             /></a>
           </div>
         </div>

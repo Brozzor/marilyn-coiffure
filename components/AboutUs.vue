@@ -39,14 +39,14 @@
       </div>
       <div class="experience-right">
         <h6>Une histoire unique</h6>
-        <h2>36 ans d'expérience</h2>
+        <h2>39 ans d'expérience</h2>
         <span class="line"></span>
         <div class="story-text">
           <div class="story-text-left">
             <p class="big-text">
               Marilyn Buisson vous accompagne dans<br />
               chacune de vos demandes capillaires<br />
-              depuis maintenant 36 ans
+              depuis maintenant 39 ans
             </p>
             <p>
               Marilyn Buisson a passé une grande partie de sa vie à couper des cheveux, pour elle ce n'est pas un métier c'est sa passion.<br>Profitez d'une riche expérience accumulée depuis des années chez vous dans votre salon , l'essayer c'est l'adopter ;)

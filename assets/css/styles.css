@@ -1276,6 +1276,10 @@ pricing
 	text-align: center;
 }
 
+.quote {
+	font-size: 12px!important;
+}
+
 .start-price b {
 	display: block;
 	font-size: 26px;
