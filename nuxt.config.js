@@ -22,6 +22,13 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700'
       }
+    ],
+    script: [
+      {
+        src: 'https://data.buisson.us/api/js/script.js',
+        defer: true,
+        'data-website-id': '67edbb223c190bdb78e62555',
+      },
     ]
 
   },
