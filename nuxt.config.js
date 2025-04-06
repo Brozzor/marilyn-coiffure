@@ -33,7 +33,7 @@ export default {
         src: 'https://datafa.st/js/script.js',
         defer: true,
         'data-domain': "marilyn-coiffure.fr",
-        'data-website-id': '67edbb223c190bdb78e62555'
+        'data-website-id': '67f1cfd9847b1e3b064d6b4d'
       },
     ]
 
