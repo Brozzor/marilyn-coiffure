@@ -25,7 +25,7 @@ export default {
     ],
     script: [
       {
-        src: 'https://data.buisson.us/api/js/script.js',
+        src: 'https://vinaly.co/js/script.js',
         defer: true,
         'data-website-id': '67edbb223c190bdb78e62555',
       },
@@ -33,7 +33,7 @@ export default {
         src: 'https://datafa.st/js/script.js',
         defer: true,
         'data-domain': "marilyn-coiffure.fr",
-        'data-website-id': '67f1cfd9847b1e3b064d6b4d'
+        'data-website-id': '6806b880e448cd88b084e57b'
       },
     ]
 
