@@ -4,7 +4,7 @@
     <div class="row">
       <h2 class="heading-title">+4000 clients satisfaits</h2>
       <div >
-        <VueSlickCarousel class="testimonial-wrapper" v-bind="carousel" >
+        <client-only><VueSlickCarousel class="testimonial-wrapper" v-bind="carousel" >
         <div class="testimonial-main">
           <div class="testimonial-box">
             <p>
@@ -14,7 +14,7 @@
           </div>
          <!--
           <div class="test-img">
-            <img src="images/testi-img.png" alt="" />
+            <img src="images/testi-img.png" alt="Photo client satisfait Marilyn Coiffure" />
           </div>-->
         </div>
         <div class="testimonial-main">
@@ -26,10 +26,10 @@
           </div>
           <!--
           <div class="test-img">
-            <img src="images/testi-img.png" alt="" />
+            <img src="images/testi-img.png" alt="Photo client satisfait Marilyn Coiffure" />
           </div>-->
         </div>
-        </VueSlickCarousel>
+        </VueSlickCarousel></client-only>
       </div>
 
     </div>
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-
 export default {
   name: 'Testimony',
-  components: { VueSlickCarousel },
+  components: {
+    VueSlickCarousel: () => process.client ? import('vue-slick-carousel') : Promise.resolve({}),
+  },
   data() {
     return {
       carousel: {

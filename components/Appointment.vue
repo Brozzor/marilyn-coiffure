@@ -108,13 +108,16 @@
           <div>
             <div class="form-field" style="float: inherit">
               <label for="day">Le jour </label>
-              <Datepicker
-                id="day"
-                :monday-first="true"
-                :language="fr"
-                :disabled-dates="disabledDates"
-                v-model="form.reservation"
-              ></Datepicker>
+              <client-only>
+                <Datepicker
+                  v-if="fr"
+                  id="day"
+                  :monday-first="true"
+                  :language="fr"
+                  :disabled-dates="disabledDates"
+                  v-model="form.reservation"
+                ></Datepicker>
+              </client-only>
             </div>
             <div class="form-field" style="float: inherit">
               <label>L'horaire</label>
@@ -166,20 +169,14 @@
 </template>
 
 <script>
-import { fr } from 'vuejs-datepicker/dist/locale'
-import Datepicker from 'vuejs-datepicker'
 import { mapActions } from 'vuex'
 
 export default {
   name: 'Appointment',
-  components: {
-    Datepicker,
-    mapActions,
-  },
   data() {
     return {
       nbStep: 1,
-      fr: fr,
+      fr: null,
       disabledDates: {
         days: [0],
       },
@@ -196,6 +193,10 @@ export default {
       },
       errorForm: '',
     }
+  },
+  async mounted() {
+    const locale = await import('vuejs-datepicker/dist/locale')
+    this.fr = locale.fr
   },
   methods: {
     ...mapActions({ reqReservation: 'booking/booking' }),

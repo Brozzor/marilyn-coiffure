@@ -4,16 +4,16 @@
     <div class="row">
       <h2 class="heading-title">Mes services</h2>
       <div class="service-wrapper clearfix">
-        <VueSlickCarousel v-bind="carousel">
+        <client-only><VueSlickCarousel v-bind="carousel">
           <div class="service-block service-middle">
             <div class="service-block-inner service-1-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/classic-cut.png" alt="" />
+                    <img src="images/classic-cut.png" alt="Icone coupe de cheveux classique" />
                   </div>
                   <h6>Coupe de cheveux</h6>
                   <p>
@@ -31,7 +31,7 @@
             <div class="service-block-inner service-2-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
@@ -39,7 +39,7 @@
                       src="img/service/cake.svg"
                       style="color: #917758"
                       width="87px"
-                      alt=""
+                      alt="Icone coiffure pour événements spéciaux"
                     />
                   </div>
                   <h6>Événements importants</h6>
@@ -58,11 +58,11 @@
             <div class="service-block-inner service-6-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/razoe-shaver.png" alt="" />
+                    <img src="images/razoe-shaver.png" alt="Icone rasoir taille de barbe" />
                   </div>
                   <h6>Taille de barbe</h6>
                   <p>
@@ -81,11 +81,11 @@
             <div class="service-block-inner service-1-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/classic-cut.png" alt="" />
+                    <img src="images/classic-cut.png" alt="Icone coupe de cheveux classique" />
                   </div>
                   <h6>Coupe de cheveux</h6>
                   <p>
@@ -103,11 +103,11 @@
             <div class="service-block-inner service-5-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="images/clipper-cut.png" alt="" />
+                    <img src="images/clipper-cut.png" alt="Icone tondeuse entretien barbe" />
                   </div>
                   <h6>Taille de barbe</h6>
                   <p>
@@ -125,11 +125,11 @@
             <div class="service-block-inner service-6-hover">
               <div class="service-block-image">
                 <div class="service-wrap-img">
-                  <img src="images/service-img.jpg" alt="" />
+                  <img src="images/service-img.jpg" alt="Service de coiffure à domicile Marilyn Coiffure Poitiers" />
                 </div>
                 <div class="service-block-image-wrap">
                   <div class="service-ic">
-                    <img src="img/service/hair-dryer.svg" width="98px" alt="" />
+                    <img src="img/service/hair-dryer.svg" width="98px" alt="Icone sèche-cheveux brushing professionnel" />
                   </div>
                   <h6>Brushing</h6>
                   <p>
@@ -149,19 +149,24 @@
           <template #nextArrow="" hidden>
             <div class=""></div>
           </template>
-        </VueSlickCarousel>
+        </VueSlickCarousel></client-only>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import '@/assets/css/vue-slick-carousel-theme.css'
 export default {
   name: 'Service',
-  components: { VueSlickCarousel },
+  components: {
+    VueSlickCarousel: () => {
+      if (process.client) {
+        import('vue-slick-carousel/dist/vue-slick-carousel.css')
+        import('@/assets/css/vue-slick-carousel-theme.css')
+        return import('vue-slick-carousel')
+      }
+    },
+  },
   data() {
     return {
       carousel: {

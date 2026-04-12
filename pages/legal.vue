@@ -44,6 +44,18 @@ import Footer from '~/components/Footer.vue'
 export default {
     components:{
         Footer
+    },
+    head() {
+        return {
+            title: 'Mentions Légales | Marilyn Coiffure - Coiffeuse à Domicile Poitiers',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Mentions légales du site Marilyn Coiffure, coiffeuse et barbière à domicile à Poitiers (86). Informations sur l\'éditeur, l\'hébergement et le développeur du site.' },
+                { hid: 'robots', name: 'robots', content: 'noindex, follow' },
+            ],
+            link: [
+                { rel: 'canonical', href: 'https://marilyn-coiffure.fr/legal' }
+            ]
+        }
     }
 }
 </script>

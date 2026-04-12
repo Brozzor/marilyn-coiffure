@@ -1,6 +1,6 @@
 <template>
   <!--banner slider section -->
-  <section id="home" class="banner-slider-initial">
+  <header id="home" class="banner-slider-initial" role="banner">
     <!--slider-->
     <div class="banner-slide-show-wrapper">
       <div class="banner-slider" id="banner-slide-show">
@@ -12,9 +12,9 @@
             <div class="banner-text">
               <span>Coiffeuse/Barbière à domicile</span>
               <h1>Marilyn Coiffure</h1>
-              <p>Prenez rendez vous avec Marilyn en seulement deux clics, profitez d'une experience de salon chez vous</p>
+              <p>Prenez rendez-vous avec Marilyn en seulement deux clics, profitez d'une expérience de salon chez vous</p>
               <span class="much-img"
-                ><img src="images/much-img.png" alt=""
+                ><img src="images/much-img.png" alt="Moustache décorative Marilyn Coiffure"
               /></span>
             </div>
           </div>
@@ -26,7 +26,7 @@
     <div class="container slider-header">
       <div class="row">
         <!--new header-->
-        <div class="header">
+        <nav class="header" role="navigation" aria-label="Navigation principale">
           <div class="mobile-ic" @click="isActive = !isActive">
             <span></span>
             <span></span>
@@ -75,10 +75,10 @@
               <li><a href="#our-team" title="Our Team">L'équipe</a></li>
             </ul>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 
 <script>

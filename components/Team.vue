@@ -7,7 +7,7 @@
         <div class="our-team-box" style="width: 345px;">
           <div class="our-team-inner">
             <div class="our-team-img">
-              <img src="img/team/marilyn1.jpg" alt="" />
+              <img src="img/team/marilyn1.jpg" alt="Marilyn Buisson, coiffeuse et barbière professionnelle à domicile à Poitiers" />
             </div>
             <div class="our-team-text">
               <h5>Marilyn Buisson</h5>

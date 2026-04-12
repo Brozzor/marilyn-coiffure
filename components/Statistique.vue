@@ -7,7 +7,7 @@
           <div class="counter-wrapper">
             <div class="counter-box">
               <div class="counter-img">
-                <img src="images/ic1.png" alt="" />
+                <img src="images/ic1.png" alt="Icone années d'expérience coiffure" />
               </div>
               <div class="counter-text">
                 <h5 class="count">36</h5>
@@ -16,7 +16,7 @@
             </div>
             <div class="counter-box">
               <div class="counter-img">
-                <img src="images/ic2.png" alt="" />
+                <img src="images/ic2.png" alt="Icone coupes de cheveux réalisées" />
               </div>
               <div class="counter-text">
                 <h5 class="count">+50000</h5>
@@ -25,7 +25,7 @@
             </div>
             <div class="counter-box">
               <div class="counter-img">
-                <img src="images/ic3.png" alt="" />
+                <img src="images/ic3.png" alt="Icone clients satisfaits" />
               </div>
               <div class="counter-text">
                 <h5 class="count">+4000</h5>
@@ -34,7 +34,7 @@
             </div>
             <div class="counter-box">
               <div class="counter-img">
-                <img src="images/ic4.png" alt="" />
+                <img src="images/ic4.png" alt="Icone formations professionnelles coiffure" />
               </div>
               <div class="counter-text">
                 <h5 class="count">5</h5>

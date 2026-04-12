@@ -1,33 +1,35 @@
 <template>
   <div>
     <Hero></Hero>
-    <AboutUs></AboutUs>
-    <Service></Service>
-    <Statistique></Statistique>
-    <Testimony></Testimony>
-    <Team></Team>
-    <Pricing></Pricing>
-    <Appointment></Appointment>
-    <Gallery></Gallery>
+    <main role="main">
+      <AboutUs></AboutUs>
+      <Service></Service>
+      <Statistique></Statistique>
+      <Testimony></Testimony>
+      <Team></Team>
+      <Pricing></Pricing>
+      <Appointment></Appointment>
+      <Gallery></Gallery>
 
-    <section class="container join-member">
-      <div class="row">
-        <div class="join-member-left">
-          <h3>
-            Vous voulez devenir client ?<br />
-            Prenez rendez-vous
-          </h3>
+      <section class="container join-member">
+        <div class="row">
+          <div class="join-member-left">
+            <h3>
+              Vous voulez devenir client ?<br />
+              Prenez rendez-vous
+            </h3>
+          </div>
+          <div class="join-member-right">
+            <a
+              href="#appointment"
+              title="Prendre rendez-vous avec votre coiffeuse à domicile à Poitiers"
+              class="read-more-btn"
+              >Prendre un rendez-vous</a
+            >
+          </div>
         </div>
-        <div class="join-member-right">
-          <a
-            href="#appointment"
-            title="Make an appointment"
-            class="read-more-btn"
-            >Prendre un rendez-vous</a
-          >
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <Footer></Footer>
   </div>

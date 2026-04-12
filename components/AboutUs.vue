@@ -5,12 +5,12 @@
       <div class="experience-left">
         <div class="brush-image-big">
           <div class="brush-inner-big-img">
-            <img src="images/brush-big.jpg" alt="" />
+            <img src="images/brush-big.jpg" alt="Salon de coiffure Marilyn Coiffure à Poitiers" />
           </div>
           <div class="brush-over-text-main">
             <div class="brush-over-text">
               <div class="timing-text">
-                <img src="images/cutter-ic.png" alt="" />
+                <img src="images/cutter-ic.png" alt="Icone ciseaux horaires d'ouverture" />
                 <h5>Horaires</h5>
               </div>
               <div class="days-text">
@@ -26,11 +26,11 @@
                 <span class="time">Fermé</span>
               </div>
               <div class="location-text">
-                <img src="images/loc-ic.png" alt="" />
+                <img src="images/loc-ic.png" alt="Localisation coiffeuse à domicile Poitiers" />
                 <span>Poitiers et ses alentours</span>
               </div>
               <div class="phone-text">
-                <img src="images/phone-ic.png" alt="" />
+                <img src="images/phone-ic.png" alt="Téléphone Marilyn Coiffure" />
                 <span>07 60 78 94 85</span>
               </div>
             </div>
@@ -54,7 +54,7 @@
             <a href="/#appointment" class="read-more-btn">Prenez un rendez-vous</a>
           </div>
           <div class="story-text-right">
-            <img src="images/shave-brush.jpg" alt="" />
+            <img src="images/shave-brush.jpg" alt="Accessoires de coiffure et barbier professionnels" />
           </div>
         </div>
       </div>

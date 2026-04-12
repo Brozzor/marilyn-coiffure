@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Marilyn Coiffure - Coiffeuse à Domicile Poitiers",
+    "short_name": "Marilyn Coiffure",
+    "description": "Coiffeuse et barbière à domicile à Poitiers et ses alentours. Réservez en ligne.",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -8,7 +10,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#917758",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "lang": "fr"
 }
