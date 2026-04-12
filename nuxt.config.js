@@ -5,8 +5,8 @@ export default {
   router: {
     linkExactActiveClass: 'bg-gray-200'
   },
-  // Target static for Netlify deployment
-  target: 'static',
+  // Target server for Docker/SSR deployment
+  target: 'server',
 
   // Global page headers
   head: {
