@@ -1154,10 +1154,12 @@ pricing
 
 .our-pricing-wrapper {
 	margin: 0 -15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .our-price-box {
-	float: left;
 	width: 50%;
 	padding: 0 15px;
 	margin-bottom: 30px;

@@ -101,7 +101,7 @@ export default {
       pricingMen: [
         {
           id: 1,
-          price: 17,
+          price: 18,
           title: 'Forfait coupe',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -117,25 +117,17 @@ export default {
         },
         {
           id: 3,
-          price: 5,
+          price: 7,
           title: 'Taille Barbe',
           comment: "Sans soin",
           img: 'images/price-ic1.png',
           altImg: 'ciseaux Marilyn Coiffure',
-        },
-        {
-          id: 4,
-          price: 25,
-          title: 'Taille Barbe couleur',
-          comment: "shampoing, soins, coloration et séchage inclus",
-          img: 'images/price-ic1.png',
-          altImg: 'ciseaux Marilyn Coiffure',
-        },
+        }
       ],
       pricingWomen: [
         {
           id: 1,
-          price: 25,
+          price: 27,
           title: 'Forfait coupe',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -143,7 +135,7 @@ export default {
         },
         {
           id: 2,
-          price: 25,
+          price: 27,
           title: 'Shampoing brush',
           comment: "Shampoing, soin et brush inclus",
           img: 'images/price-ic1.png',
@@ -159,7 +151,7 @@ export default {
         },
         {
           id: 4,
-          price: 60,
+          price: 67,
           title: 'Forfait coupe couleur',
           comment: "shampoing, soin, brush inclus",
           img: 'images/price-ic4.png',
@@ -167,7 +159,6 @@ export default {
         },
         {
           id: 5,
-          price: 65,
           title: 'Forfait coupe mèches',
           comment: "shampoing, soin, brush inclus",
           img: 'images/price-ic4.png',
@@ -175,7 +166,7 @@ export default {
         },
         {
           id: 6,
-          price: 55,
+          price: 60,
           title: 'Forfait couleur brush',
           comment: "shampoing, couleur et soin inclus",
           img: 'images/price-ic4.png',
@@ -183,28 +174,7 @@ export default {
         },
         {
           id: 6,
-          title: 'Lissage brésilien relax',
-          comment: "Maitrise des frisottis",
-          img: 'images/price-ic4.png',
-          altImg: 'produits Marilyn Coiffure',
-        },
-        {
-          id: 6,
-          title: 'Lissage brésilien smooth',
-          comment: "Réduction du volume",
-          img: 'images/price-ic4.png',
-          altImg: 'produits Marilyn Coiffure',
-        },
-        {
-          id: 6,
-          title: 'Lissage brésilien Strong',
-          comment: "Effet durable dans le temps",
-          img: 'images/price-ic4.png',
-          altImg: 'produits Marilyn Coiffure',
-        },
-        {
-          id: 6,
-          price: 35,
+          price: 38,
           title: 'Soin détox Olaplex',
           comment: "Soin réparateur Olaplex, massage crânien inclus",
           img: 'images/price-ic4.png',
@@ -214,7 +184,7 @@ export default {
       pricingChildren: [
         {
           id: 1,
-          price: 8,
+          price: 9,
           title: 'Forfait coupe 0-6 ans',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
@@ -222,7 +192,7 @@ export default {
         },
         {
           id: 2,
-          price: 10,
+          price: 12,
           title: 'Forfait coupe 6-12 ans',
           comment: "sans shampoing",
           img: 'images/price-ic1.png',
