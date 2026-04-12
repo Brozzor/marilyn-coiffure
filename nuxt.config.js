@@ -3,7 +3,13 @@ export default {
   ssr: true,
 
   router: {
-    linkExactActiveClass: 'bg-gray-200'
+    linkExactActiveClass: 'bg-gray-200',
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '/index.html',
+        redirect: '/'
+      })
+    }
   },
   // Target server for Docker/SSR deployment
   target: 'server',

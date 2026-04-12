@@ -10,7 +10,7 @@
                 <img src="images/ic1.png" alt="Icone années d'expérience coiffure" />
               </div>
               <div class="counter-text">
-                <h5 class="count">36</h5>
+                <h5 class="count">41</h5>
                 <p>Années d'expériences</p>
               </div>
             </div>
